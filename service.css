@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(212,220,231);
+}
+
+
+/* START:STYLING  FOR THE NAVBAR STARTS FROM HERE */
+.navbar{
+  background-color: rgb(19,82,245) !important;
+}
+   /*active link */
+ .nav-link.active {
+  color: white !important;
+  text-decoration: underline;
+  text-underline-offset: 10px; 
+}
+
+/*navbar link hover effect */
+.nav-link {
+  color: #fff; /* Default link color */
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: lightblue;
+}
+
+/* Change the toggler icon to white */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&& */
+  
+  /* END: STYLING FOR THE NAVBAR ENDS HERE */
+  
+/* ********************************************************************* */
+
+
+  /* ********************************************************* */
+
+#serv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  /* height: 170vh; */
+  height: auto;
+  margin-top: 20px;
+  /* background-color: purple; */
+  
+
+}
+/* ******************************************** */
+.serv-texts{
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  /* height: 40vh; */
+  height: auto;
+  width: 55vw;
+  align-items: center;
+  justify-content: center;
+  /* background-color: grey; */
+  
+}
+
+ 
+.serv-texts h3{
+  font-family: fantasy;
+  color: black;
+  text-align: center; 
+  text-decoration: underline  rgb(19,82,245);
+  text-underline-offset: 10px; 
+  
+}
+
+.serv-texts p{
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  color: black;
+}
+/* ************************************************************** */
+/* STYLE FOR THE 360 IMAGE SLIDER */
+
+.banner{
+  margin-top: 20px;
+  width: 100vw;
+  height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+
+
+.banner .slider{
+  /* background-color: rgb(19,82,245); */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 20s linear infinite;
+  z-index: 2;
+}
+@keyframes autoRun{
+  from{
+      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }to{
+      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item{
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: 
+      rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+      translateZ(500px);
+}
+.banner .slider .item img{
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
+}
+
+
+/* *************************************************************************8 */
+
+
+/* Section styling */
+#list-serve {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: red; */
+}
+
+.left-serv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 40vh;
+  /* background:rgb(200,210,221); */
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.left-serv.visible {
+  animation: slideIn 1s ease forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ************************************************** */
+.vertical-line {
+  width: 5px;
+  height: 60%;
+  background-color: rgb(19,82,245); 
+  /* margin: 0 20px; */
+}
+
+/* ********************************************************* */
+/* START ITEMS ON THE RIGHT */
+.right-container, .left-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: orange; */
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.right-serv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 40vh;
+  /* background: rgb(200, 210, 221); */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.right-serv.visible {
+  animation: slideInRight 1s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%); /* Move in from the right */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* End at the original position */
+    opacity: 1;
+  }
+}
+
+.right-serv h3, .left-serv h3 {
+  /* margin-top: 70px; */
+  font-family: fantasy;
+  text-align: center;
+  color: black !important;
+  text-decoration: underline rgb(19, 82, 245);
+  text-underline-offset: 10px;
+}
+
+.right-serv p, .left-serv p {
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 23vh;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  /* background-color: blue; */
+}
+
+/* &******************************************************************************** */
+/* THE FOOTER BEGINS FROM HERE  */
+footer{
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgb(19,82,245);
+  width: 100vw;
+  color: white;
+  height: auto;
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* ************************ */
+.one{
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 100%;
+  /* background-color: #A04000; */
+}
+.two{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 100%;
+  /* background-color: #A04000;  */
+}
+/* ******************************** */
+.pages{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 100%;
+  justify-content: center;
+  align-items:flex-start;
+  /* background-color: orange; */  
+}
+.pages a{
+  text-decoration: none;
+  color:white;
+  font-size: large;
+}
+
+/* ************* */
+.ban{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(19,82,245);
+}
+
+.ban img{
+  width: 85%;
+  height: auto;
+}
+/* .ban img{
+  animation: autoRun 20s linear infinite;
+  z-index: 2;
+}
+@keyframes autoRun{
+  from{
+      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }to{
+      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+} */
+
+.socials{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: yellow; */
+  
+}
+
+.socials a{
+  text-decoration: none;
+  color: white;
+}
+
+.socials a:hover{
+  color: black;
+}
+/* ********************************************** */
+.address{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: auto;
+  justify-content: center;
+  align-items:flex-start;
+  /* background-color: red; */
+  
+}
+.address .fa-brands{
+  text-decoration: none;
+  color: white;
+ }
+ 
+ .address a{
+   text-decoration: none;
+   color:white;
+   font-size: large;
+   padding-left: 15px;
+   
+ }
+ 
+ .address a:hover{
+   color: black;
+ }
+/* ****************************************  */
+.dev{
+  display: flex;
+  width: 20vw;
+  height: 40vh;
+  color: white;  
+  justify-content: center;
+  align-items: last baseline;
+  text-align: center;
+  /* background-color: gold; */
+}
+
+.dev a{
+  color: white;
+  text-decoration: none;  
+}
+.dev a:hover{
+  color: black;
+}
+
+.tag{
+ text-shadow:2px 2px 2px grey;
+ animation:bayo 2s ease 1s infinite;
+}
+
+@keyframes bayo{
+
+ 0%{
+    transform:rotateX(-45deg);
+}
+ 50%{
+    transform:rotateY(45deg);
+}
+}

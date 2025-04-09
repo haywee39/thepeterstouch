@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(212,220,231);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* START:STYLING  FOR THE NAVBAR STARTS FROM HERE */
+
+.navbar{
+  background-color: rgb(19,82,245) !important;
+}
+ /* CSS for active link */
+ .nav-link.active {
+  color: white !important;
+  text-decoration: underline;
+  text-underline-offset: 10px; 
+}
+
+/*navbar link hover effect */
+.nav-link {
+  color: #fff;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: lightblue;
+}
+
+/* Change the toggler icon to white */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&& */
+  
+  /* END: STYLING FOR THE NAVBAR ENDS HERE */
+/* ***********************************************************8 */
+/* ************************* */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in; /* Smooth transition */
+}
+
+
+.card-content{
+    padding-top: 20vh;
+    width: 90vw;
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color:blueviolet ; */
+}
+
+/* ****************************************************************************************** */
+
+#typewriter {
+  margin-bottom: 20px;
+  font-family: fantasy;
+  font-size: 65px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  height: 15vh;
+  width: 62vw;
+  color: white;
+   /* background-color: red; */
+}
+
+
+/* ***************************************** */
+
+#typewrite {
+  padding-top: 20px;
+  font-size: 20px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  height: 30vh;
+  width: 30vw;
+  color: white;
+  /* background-color: purple; */
+}
+
+/* ********************************************************************************************* */
+  /* WE PROFER SOLUTIONS TO PROBLEMS */
+  #about{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  .abt-texts{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./ubuilding/u3pexels-camcasey-1722183.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .abt-texts h1, h3{
+    font-family: fantasy;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center; 
+  }
+  
+  .abt-texts p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+  }
+  /* styling for the 4circles  */
+  .circle-container {
+    position: relative;
+    margin-top: 20px;
+    width: 350px; 
+    height: 350px; 
+  }
+
+  .circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  .circle{
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  .top-left {
+    top: 0;
+    left: 0;
+    background-color: #f1c40f;
+    animation-name: bounce;
+  }
+  
+  @keyframes bounce {
+    0% {transform: translateY(0);}
+    50%{transform: translateY(-20px);}
+    100% {transform: translateY(0)}
+  }
+  .top-left p{
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .top-right {
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    background-color: red;
+    animation-name: bounce2;
+  }
+  @keyframes bounce2 {
+    0% {transform: translateY(0);}
+    50%{transform: translateY(20px);}
+    100% {transform: translateY(0)}
+  }
+  .top-right p{
+    text-align: right;
+  }
+
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #A04000;
+    animation-name: bounce2;
+  }
+  .bottom-left p{
+    text-align: left;
+  }
+
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(19,82,245);
+    animation-name: bounce;
+  }
+  .bottom-right p{
+    text-align: right;
+  }
+  /* ******************* */
+  .logo-comp {
+    overflow: hidden;
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19,82,245);
+  }
+  
+  .slide-in-image {
+    width: 30vw; /* Adjust to the desired image size */
+    height: 70vh;
+    opacity: 0;
+    transform: translateY(100%); /* Start position: off the screen to the right */
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .slide-in-image.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /* **************************************************** */
+  #play-vid{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    margin-bottom: 30px;
+    /* background-color:rebeccapurple;   */
+}
+
+
+.motion{
+    position: relative;
+    width: 25vw;
+    height: 50%;
+    /* background-color: #f1c40f; */
+}
+
+
+/* *************************************************************************************** */
+/* lets discuss project  */
+.discuss{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.rhombus-video-wrapper {
+  width: 320px; 
+  height: 320px; 
+  position: relative; 
+}
+
+.rhombus-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Creates the rhombus shape */
+}
+/* **************************** */
+/* Optional: Style for video controls to ensure they are visible */
+.rhombus-video::-webkit-media-controls {
+  overflow: visible !important; /* For Chrome/Safari */
+}
+
+.rhombus-video::-moz-media-controls {
+  overflow: visible !important; /* For Firefox */
+}
+/* ********************************* */
+.what-we-do{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+  width: 30%;
+  /* background-color: yellow; */
+}
+.what-we-do p{
+  font-size: 18px;
+}
+.call-pro{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  height: auto;
+  width: 20%;
+  font-size: 18px;
+  /* background-color: orange; */
+}
+
+/* ******************* */
+/* button  */
+.contact-us {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 60px;
+  background: none;
+  border: 1px solid white;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.contact-us::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  /* background: lawngreen; */
+  background: rgb(19,82,245);
+  z-index: -1;
+  transition: .5s;
+
+}
+.contact-us:hover::before{
+  width: 100%;
+}
+
+
+/* **************************************** */
+ /* Section with Spinning Boxes */
+ .spinning-section {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: lime; */
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  height: 90%;
+  /* background-color: #f1c40f; */
+}
+
+.box {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  height: 50vh;
+  opacity: 0; /* Start invisible */
+  transform: scale(0) rotate(0deg); /* Start small and not rotated */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.box.visible {
+  opacity: 1;
+  transform: scale(1) rotate(360deg); /* Spin and scale in */
+}
+
+.box.invisible {
+  opacity: 0; /* Reset to invisible */
+  transform: scale(0) rotate(0deg); /* Reset to original state */
+}
+/* *********************** */
+/* size of images  */
+.audio, .auditorium, .led, .gifts{
+  width: 100%;
+  height: 100%;
+}
+/* ************************** */
+.box-text{
+  padding-top: 30px;
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: rgb(19,82,245);
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  transition: width 0.4s ease, height 0.4s ease;
+  
+}
+.box:hover .box-text{
+  visibility: visible;
+  width:95%;
+  height:90%;
+  opacity: 0.8;
+  
+}
+
+.box-text h5{
+  color: white;
+}
+
+.box-text p{
+  width: 90%;
+  height: 65%;
+  font-size: 20px;
+  color: white;
+  /* background-color: orange; */
+}
+
+/* ********************************************************************* */
+
+/* ************************************************************** */
+#why{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 55vh;
+  /* background-color: aqua; */
+}
+
+.why-container{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 60vw;
+  height: 45vh;
+  /* background-color: orange; */
+}
+.why-container h3{
+  font-family: fantasy;
+  color: black;
+  text-decoration: underline  rgb(19,82,245);
+  text-underline-offset: 10px; 
+}
+
+.why-container p{
+  font-size: 20px;
+  padding-top: 10px;
+}
+/* <!-- START- CLIENT LIST */
+#client-cover h3{
+  font-family: fantasy;
+  color: white;
+  text-decoration: underline  rgb(19,82,245);
+  text-underline-offset: 10px; 
+  margin-bottom: 20px;
+}
+
+#client-list img{
+  width: 100%;
+  height: 100%;
+}
+
+
+#carouselExampleInterval{
+  height: 45vh;
+  width: 300px;
+  /* background-color: yellow; */
+} 
+#carouselExampleInterval h3{
+  font-family: fantasy;
+  color: black;
+  text-decoration: underline  rgb(19,82,245);
+  text-underline-offset: 10px; 
+} 
+/* <!-- END- CLIENTS LIST HERE --> */
+
+/* *************************************************************************8 */
+/* THE FOOTER BEGINS FROM HERE  */
+footer{
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgb(19,82,245);
+  width: 100vw;
+  color: white;
+  height: auto;
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ************************ */
+.one{
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 100%;
+  /* background-color: #A04000; */
+}
+.two{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 100%;
+  /* background-color: #A04000;  */
+}
+/* ******************************** */
+.pages{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 100%;
+  justify-content: center;
+  align-items:flex-start;
+  /* background-color: orange; */  
+}
+.pages a{
+  text-decoration: none;
+  color:white;
+  font-size: large;
+}
+.pages a:hover{
+  color: black;
+}
+
+/* ************* */
+.ban{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(19,82,245);
+}
+
+.ban img{
+  width: 85%;
+  height: auto;
+}
+
+.socials{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: yellow; */
+  
+}
+
+.socials a{
+  text-decoration: none;
+  color: white;
+}
+
+.socials a:hover{
+  color: black;
+}
+/* ********************************************** */
+.address{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: auto;
+  justify-content: center;
+  align-items:flex-start;
+  /* background-color: red; */
+  
+}
+.address .fa-brands{
+  text-decoration: none;
+  color: white;
+ }
+ 
+ .address a{
+   text-decoration: none;
+   color:white;
+   font-size: large;
+   padding-left: 15px;
+   
+ }
+ 
+ .address a:hover{
+   color: black;
+ }
+/* ****************************************  */
+.dev{
+  display: flex;
+  width: 20vw;
+  height: 40vh;
+  color: white;  
+  justify-content: center;
+  align-items: last baseline;
+  text-align: center;
+  /* background-color: gold; */
+}
+
+.dev a{
+  color: white;
+  text-decoration: none;  
+}
+.dev a:hover{
+  color: black;
+}
+
+.tag{
+ text-shadow:2px 2px 2px grey;
+ animation:bayo 2s ease 1s infinite;
+}
+
+@keyframes bayo{
+
+ 0%{
+    transform:rotateX(-45deg);
+}
+ 50%{
+    transform:rotateY(45deg);
+}
+}

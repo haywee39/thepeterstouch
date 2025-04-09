@@ -1,0 +1,255 @@
+@media screen and (max-width: 767px) {
+
+    #home{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-content{
+        margin-top: 10vh;
+        padding-top: 0;
+        width: 100vw;
+        height: 70vh;
+        /* background-color:olive ; */
+    }
+
+    #typewriter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 47px;
+        letter-spacing: 0;
+        white-space: wrap;
+        width: 98vw !important;
+        height: 30vh !important;
+        /* background-color: orangered; */
+    }
+
+    #typewrite{
+        width: 95vw;
+        height: 35vh;
+        font-size: 18px;
+        /* background-color: orange; */
+    }
+
+    .box-text h5{
+        color: white;
+      }
+      
+      .box-text p{
+        /* margin-top: 4vh; */
+        width: 85%;
+        font-size: 18px !important;
+        color: white;
+      }
+      
+}
+
+
+
+
+/* ************************************************************************8 */
+@media screen and (max-width: 1023px) {
+    #home{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-content{
+        margin-top: 10vh;
+        padding-top: 0;
+        width: 90vw;
+        height: 70vh;
+        /* background-color:blueviolet ; */
+    }
+
+    #typewriter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        letter-spacing: 0;
+        white-space: wrap;
+        width: 85vw;
+        height: 32vh;
+        /* background-color: yellowgreen; */
+    }
+
+    #typewrite{
+        width: 78vw;
+        height: 29vh;
+        /* background-color: brown; */
+    }
+    /* ************************** */
+    /*  */
+    #about{
+        height: auto;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .abt-texts{
+        margin-top: 3vh;
+        width: 100vw;
+        height: auto;
+
+    }
+    .abt-texts h3{
+        font-weight: bold;
+    }
+    /* ************************** */
+    .logo-comp{
+        width: 100vw;
+        height: 30vh;
+    }
+    .slide-in-image {
+        width: 90%; 
+        height: auto;
+        /* background-color: red; */
+    }
+    /* ***************************** */
+
+    /* video section  */
+    #play-vid{
+        width: 100vw;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .motion{
+        width: 50%;
+        height: 100%;
+    }
+    /* ********************** */
+    .spinning-section{
+        margin-top: 3vh;
+        height: auto;
+    }
+    .box-container {
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    .box {
+      width: 100%; 
+      height: 100%; 
+      /* background-color: orange; */
+    }
+    .box:hover .box-text{
+        width:100%;
+        height:100%;
+      }
+    .box-text{
+        padding-top: 0;
+    } 
+    .box-text p{
+        width: 100%;
+        height: 70%;
+        font-size: 18px;
+      }
+
+    /* ****************** */
+    .discuss{
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: rgb(19,82,245); */       
+      }
+      
+      .what-we-do, .call-pro{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        /* background-color: red; */
+      }
+      
+      /* ******************************** */
+
+     
+
+    /* *********************************** */
+    #why{
+        margin-top: 30px;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .why-container{
+        margin-top: 30px;
+        margin-left: 0;
+        width: 95%;
+        height: auto;
+    }
+    .why-container h3{
+        font-weight: bold;
+    }
+    
+    /* **************************************8 */
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+      }
+      .one, .two{
+        width: 100%;
+        height: auto;
+        /* background-color: #A04000; */
+      }
+      .two{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .ban{
+        width: 45vw;
+      }
+      .address, .dev{
+        width: 100%;
+      }
+      .dev{
+        align-items: first baseline;
+        height: auto;
+  
+      }
+  
+      .foot{
+        display: flex;
+        width: 100vw;
+        height: 100%;
+      }
+
+}
+
+
+
+
+
+/* ********************************************* */
+ /* *********************************************************** */
+    @media screen and (max-width: 1023px) {
+        .banner .slider{
+            width: 160px;
+            height: 200px;
+            left: calc(50% - 80px);
+        }
+        
+    }
+    @media screen and (max-width: 767px) {
+        .banner .slider{
+            width: 100px;
+            height: 150px;
+            left: calc(50% - 50px);
+        }
+    }
+   

@@ -1,0 +1,173 @@
+      
+  @media screen and (max-width: 767px) {
+      .banner .slider{
+          width: 100px;
+          height: 160px;
+          left: calc(50% - 50px);
+      }
+      .banner .slider .item{
+          transform: 
+              rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+              translateZ(150px);
+      }
+
+      /* ************************************************************ */
+      .serv-texts{
+        margin-top: 12vh;
+        width: 95vw;
+        height: 40vh;
+      }
+        .right-container, .left-container {
+          width: 100%;
+          height: auto;
+          gap: 20px;
+          padding: 10px; /* Add some padding for smaller devices */
+        }
+      
+        .right-serv, .left-serv {
+          width: 100%; /* Full-width on smaller screens */
+          height: auto;
+          /* gap: 200px; */
+          /* margin-bottom: 20px; Add spacing between items */
+        }
+      
+        .right-serv p, .left-serv p {
+          width: 95%;
+          height: 30vh;
+          /* font-size: 16px; Smaller text for mobile screens */
+        }
+      
+        .right-serv h3, .left-serv h3 {
+          font-size: 20px !important; /* Adjust heading size for mobile */
+        }
+
+        .vertical-line{
+          display: none;
+        }
+      
+      
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* **********************************************************************************8 */
+   /* MEDIA QUERY FOR 360 IMG SLIDER  */
+   @media screen and (max-width: 1023px) {
+    #serv{
+      /* height: 100vh; */
+      height: auto;
+    }
+    .serv-texts{
+      margin-top: 12vh;
+      width: 90vw;
+      height: 35vh;
+    }
+    .serv-texts h3{
+        font-weight: bold;
+    }
+  /* ************************** */
+    .banner{
+      margin-top: 20px;
+      height: 40vh;
+      /* background-color: orange; */
+    }
+    .banner .slider{
+        padding-top: 30px;
+        width: 160px;
+        height: 200px;
+        left: calc(50% - 80px);
+    }
+    .banner .slider .item{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(250px);
+    }
+    /* **************************************** */
+   
+    #list-serve{
+      width: 100vw;
+      height: auto;
+      flex-direction: column;
+      /* background-color: yellow; */
+    }
+    .right-container, .left-container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      /* background-color: aqua; */
+    }
+  
+    .right-serv, .left-serv {
+      /* gap: 10px; */
+      width: 95vw; /* Adjust width for smaller screens */
+      height: auto; /* Adjust height for content */
+      /* background-color: orange; */
+    }
+
+    .right-serv h3, .left-serv h3{
+      padding-top: 20px;
+      font-weight: bold;
+    } 
+  
+    .right-serv p, .left-serv p {
+      display: flex;
+      align-items: first baseline;
+      width: 95%;
+      height: 20vh;
+      /* background-color: red; */
+    }
+  
+    .vertical-line{
+      display: none;
+    }
+  
+  /* ********************************* */
+
+    /* **************************************8 */
+    footer{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    .one, .two{
+      width: 100%;
+      height: auto;
+      /* background-color: #A04000; */
+    }
+    .two{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .ban{
+      width: 45vw;
+    }
+    .address, .dev{
+      width: 100%;
+    }
+    .dev{
+      align-items: first baseline;
+      height: auto;
+
+    }
+
+    .foot{
+      display: flex;
+      width: 100vw;
+      height: 100%;
+    }
+}
+     /* **************************************8 */
+    

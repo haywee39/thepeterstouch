@@ -1,0 +1,204 @@
+/* @media (width < 400px){ */
+@media screen and (max-width: 767px) {
+  #about{
+    margin-top: 20vh;
+    padding-top: 0vh;
+    display: flex;
+    width: 100vw;
+    height: auto !important;
+        /* background-color: blueviolet; */
+  }
+
+  .abt-texts{
+    height: auto !important;
+    width: 95vw;
+    /* background-color: yellow; */
+  }
+
+  .abt-texts h1{
+    font-size: 23px !important;
+  }
+
+  .abt-texts p{
+    font-size: 18px;
+  }
+  /* ******************************* */
+  .selling-point{
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+    background: black;
+  }
+
+  .selling-point p{
+    font-size: 16px;
+  }
+/* *********************************         */
+/* *************************** */
+  #believes{
+    display: flex;
+    width: 100vw;
+    height: 182vh !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* background-color: orange; */
+  }
+
+  .belief-container{
+    height: 162vh !important;
+    width: 100vw;
+    /* background-color: black; */
+  }
+  .belief-each {
+    display: flex;
+    width: 98vw;
+    height: 48vh !important;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+  }
+
+  .belief-each h1{
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  
+
+  .belief-each p {
+     width: 95vw;
+    height: 33vh !important;
+  }
+
+    
+}
+
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* @media (width < 912px) { */
+@media screen and (max-width: 1023px) {
+    #about{
+        /* padding-top: 12vh; */
+        display: flex;
+        width: 100vw;
+        height: 200vh;
+        /* background-color: red; */
+    }
+    .abt-texts{
+      display: flex;
+        padding-top: 2vh;
+        width: 95vw;
+        height: auto;
+        /* background-color: green; */
+      }
+     
+      .abt-texts h1{
+        font-size:25px;
+        text-align: justify;
+        font-weight: bolder;
+        /* background-color: blue; */
+      }
+
+      .abt-texts p{
+        padding-top: 10px;
+        font-size: 19px;
+      }
+      .selling-point{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+      .selling-point p{
+        width: 75%;
+      }
+
+      /* ************************************** */
+      #believes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 110vh;
+        width: 100vw;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        /* background-color: orange; */
+      }
+
+      .belief-container {
+        display: flex;
+        justify-content: center;
+        width: 98vw;
+        height: 105vh;
+        gap: 17px;
+        /* background-color: chartreuse; */
+      }
+      .belief-each {
+        display: flex;
+        width: 85vw;
+        height: 30vh;
+        text-align: center;
+        justify-content: center;
+        /* padding-left: 0; */
+      }
+      .belief-each h1{
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .belief-each p {
+        width: 95%;
+        height: 20vh;
+        font-size: 17px;
+        /* background-color: blue; */
+      }
+
+
+
+
+
+      /* ************************************8 */
+       /* **************************************8 */
+    footer{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    .one, .two{
+      width: 100%;
+      height: auto;
+      /* background-color: #A04000; */
+    }
+    .two{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .ban{
+      width: 45vw;
+    }
+    .address, .dev{
+      width: 100%;
+    }
+    .dev{
+      align-items: first baseline;
+      height: auto;
+
+    }
+
+    .foot{
+      display: flex;
+      width: 100vw;
+      height: 100%;
+    }
+
+
+}
