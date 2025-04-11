@@ -7,10 +7,10 @@
 body{
     scroll-behavior: smooth;
     background-color: rgb(212,220,231);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 
@@ -34,7 +34,7 @@ body{
 }
 
 .nav-link:hover {
-  color: lightblue;
+  color:black;
 }
 
 /* Change the toggler icon to white */
@@ -45,69 +45,46 @@ body{
   
   /* END: STYLING FOR THE NAVBAR ENDS HERE */
 /* ***********************************************************8 */
-/* ************************* */
 #home {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   width: 100vw;
   height: 100vh;
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-image 1s ease-in; /* Smooth transition */
+  background-position: center;
+  transition: background-image 1s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.card-content{
-    padding-top: 20vh;
-    width: 90vw;
-    height: 90vh; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color:blueviolet ; */
+.content {
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
 }
 
-/* ****************************************************************************************** */
-
-#typewriter {
-  margin-bottom: 20px;
-  font-family: fantasy;
-  font-size: 65px;
-  letter-spacing: 2px;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  text-align: center;
-  height: 15vh;
-  width: 62vw;
-  color: white;
-   /* background-color: red; */
-}
-
-
-/* ***************************************** */
-
-#typewrite {
-  padding-top: 20px;
-  font-size: 20px;
-  overflow: hidden;
-  display: inline-block;
-  text-align: center;
-  height: 30vh;
+.text {
+  display: flex;
   width: 30vw;
-  color: white;
-  /* background-color: purple; */
+  height: auto;
+  text-align: justify;
+  /* background-color: red; */
+  border-radius: 10px ;
+  border:5px solid blue ;
+  padding: 50px;
+  color: #fff;
 }
+
 
 /* ********************************************************************************************* */
   /* WE PROFER SOLUTIONS TO PROBLEMS */
   #about{
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     align-items: center;
     justify-content: center;
     /* background-color: red; */
@@ -117,7 +94,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 90vh;
-    width: 50vw;
+    width: 75vw;
     align-items: center;
     justify-content: center;
     background-image: url(./ubuilding/u3pexels-camcasey-1722183.jpg);
@@ -143,18 +120,32 @@ body{
   .circle-container {
     position: relative;
     margin-top: 20px;
-    width: 350px; 
-    height: 350px; 
+    width: 450px; 
+    height: 450px; 
   }
 
+ 
   .circle {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    
+  }
+  .r-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    text-decoration: none;
     color: white;
     
   }
@@ -173,7 +164,7 @@ body{
   
   @keyframes bounce {
     0% {transform: translateY(0);}
-    50%{transform: translateY(-20px);}
+    50%{transform: translateY(-10px);}
     100% {transform: translateY(0)}
   }
   .top-left p{
@@ -184,13 +175,13 @@ body{
   .top-right {
     top: 0;
     right: 0;
-    margin-right: 20px;
+    margin-right: 10px;
     background-color: red;
     animation-name: bounce2;
   }
   @keyframes bounce2 {
     0% {transform: translateY(0);}
-    50%{transform: translateY(20px);}
+    50%{transform: translateY(10px);}
     100% {transform: translateY(0)}
   }
   .top-right p{
@@ -213,8 +204,8 @@ body{
   .bottom-right {
     bottom: 0;
     right: 0;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     background-color: rgb(19,82,245);
     animation-name: bounce;
   }
@@ -222,49 +213,55 @@ body{
     text-align: right;
   }
   /* ******************* */
-  .logo-comp {
-    overflow: hidden;
-    width: 40vw;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(19,82,245);
-  }
-  
-  .slide-in-image {
-    width: 30vw; /* Adjust to the desired image size */
-    height: 70vh;
-    opacity: 0;
-    transform: translateY(100%); /* Start position: off the screen to the right */
-    transition: transform 1s ease, opacity 1s ease;
-  }
-  
-  .slide-in-image.visible {
-    transform: translateY(0);
-    opacity: 1;
-  }
   /* **************************************************** */
   #play-vid{
-    
+    margin-top: 20px;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    width: 50vw;
-    height: 60vh;
+    width: auto;
+    height: auto;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     pointer-events: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     /* background-color:rebeccapurple;   */
 }
-
+.vid-cover{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: #f1c40f;    */
+}
 
 .motion{
-    position: relative;
-    width: 25vw;
-    height: 50%;
-    /* background-color: #f1c40f; */
+  position: relative; 
+  width: 100%;
+  height: 100%; 
 }
+.arrow{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  text-decoration: none;
+  top: -50;
+  right: 50;
+  color: white;
+  cursor: pointer;
+  pointer-events: visible;
+ 
+
+}
+
+
+
 
 
 /* *************************************************************************************** */
@@ -282,8 +279,8 @@ body{
   color: white;
 }
 .rhombus-video-wrapper {
-  width: 320px; 
-  height: 320px; 
+  width: 300px; 
+  height: 300px; 
   position: relative; 
 }
 
@@ -436,7 +433,7 @@ body{
 .box:hover .box-text{
   visibility: visible;
   width:95%;
-  height:90%;
+  height:70%;
   opacity: 0.8;
   
 }
@@ -544,24 +541,6 @@ footer{
   /* background-color: #A04000;  */
 }
 /* ******************************** */
-.pages{
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  height: 100%;
-  justify-content: center;
-  align-items:flex-start;
-  /* background-color: orange; */  
-}
-.pages a{
-  text-decoration: none;
-  color:white;
-  font-size: large;
-}
-.pages a:hover{
-  color: black;
-}
-
 /* ************* */
 .ban{
   display: flex;
@@ -575,12 +554,6 @@ footer{
   position: relative;
   background-color: rgb(19,82,245);
 }
-
-.ban img{
-  width: 85%;
-  height: auto;
-}
-
 .socials{
   display: flex;
   width: 100%;

@@ -217,20 +217,6 @@ footer{
   /* background-color: #A04000;  */
 }
 /* ******************************** */
-.pages{
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  height: 100%;
-  justify-content: center;
-  align-items:flex-start;
-  /* background-color: orange; */  
-}
-.pages a{
-  text-decoration: none;
-  color:white;
-  font-size: large;
-}
 
 /* ************* */
 .ban{
@@ -245,22 +231,6 @@ footer{
   position: relative;
   background-color: rgb(19,82,245);
 }
-
-.ban img{
-  width: 85%;
-  height: auto;
-}
-/* .ban img{
-  animation: autoRun 20s linear infinite;
-  z-index: 2;
-}
-@keyframes autoRun{
-  from{
-      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-  }to{
-      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
-  }
-} */
 
 .socials{
   display: flex;
