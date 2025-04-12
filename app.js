@@ -1,4 +1,21 @@
+ // TYPEWRITER 
+const textToType = "Your trusted partner for state-of-the-art LED displays,cutting-edge audio-visual solutions, impactful publicity equipments.lorem ipsum ib din sortcnv lorem ipsum ib din sortcnvlorem i";
+const typingSpeed = 15; // Adjust this value (in milliseconds) to control the typing speed
+let textIndex = 0;
+const textElement = document.getElementById('typewriter-text');
 
+function typeWriter() {
+  if (textIndex < textToType.length) {
+    textElement.innerHTML += textToType.charAt(textIndex);
+    textIndex++;
+    setTimeout(typeWriter, typingSpeed);
+  }
+}
+
+// Call the typeWriter function when the page loads
+window.onload = typeWriter;
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 const homeSection = document.getElementById('home');
 const images= [
   'url("./backgrdimg/backgrd.jpg")',
@@ -18,11 +35,19 @@ function changeBackground() {
 changeBackground(); 
 setInterval(changeBackground, 3000);
 
-// window.onload = () => {
-//   typeWriter1();
-//   rotateBackground();
-//   setInterval(rotateBackground, 5000); // Change background every 5 seconds
-// };
+// ***************************************
+// var i = 0;
+// var txt = 'Your trusted partner for state-of-the-art LED displays,cutting-edge audio-visual solutions, impactful publicity equipments.lorem ipsum ib din sortcnv lorem ipsum ib din sortcnvlorem i' 
+//              /* The text */
+// var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+// function typeWriter() {
+//   if (i < txt.length) {
+//     document.getElementById("msg").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
 // ***************************************************************
 
 // COMPANY LOGO APPEARS ON Slide in TO THE POINT 
