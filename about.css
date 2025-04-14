@@ -73,7 +73,7 @@ body{
   
    
   .abt-texts h1{
-    font-family: fantasy;
+    /* font-family: fantasy; */
     font-size: 45px;
     color: black;
     text-align: center; 
@@ -85,28 +85,11 @@ body{
   .abt-texts p{
     text-align: center;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: lighter;
     color: black;
   }
 
-  /* .selling-point{
-    display: flex;
-    width: 100vw;
-    height: 15vh;
-    justify-content: space-evenly;
-    align-items: center;
-    font-weight: bolder;
-    background: black;
-  }
-
-  .selling-point p{
-    padding: 10px;
-    color: white;
-  }
-  
-  .selling-point .fa-solid{
-    color: rgb(19,82,245);
-  } */
   /* *********************************************************** */
  
   #believes{
@@ -140,7 +123,6 @@ body{
     width: 30vw;
     height: 55vh;
     background:rgb(200,210,221);
-    /* background-color: ; */
     box-shadow: 10px 10px rgb(19,82,245);
     transform: translateX(100%);
     opacity: 0;
@@ -162,8 +144,8 @@ body{
   }
    
   .belief-each h1 {
-    font-family: fantasy;
-    letter-spacing: 1px;
+    /* font-family: fantasy; */
+    /* letter-spacing: 1px; */
     font-size: 30px;
     text-align: center;
     color: black !important;
@@ -179,6 +161,7 @@ body{
     height: 30vh;
     text-align: center;
     font-size: 20px;
+    font-weight: lighter;
     color: black;
     /* line-height: normal; */
     /* background-color: red; */

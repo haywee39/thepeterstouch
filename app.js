@@ -20,7 +20,7 @@ window.onload = typeWriter;
 const homeSection = document.getElementById('home');
 const images= [
   'url("./backgrdimg/backgrd.jpg")',
-  'url("./backgrdimg/mixr.jpg")',
+  'url("./backgrdimg/redmixr.jpg")',
   'url("./backgrdimg/mic-conf.jpg")'
   // "",
   // "./backgrdimg/mic-conf.jpg"

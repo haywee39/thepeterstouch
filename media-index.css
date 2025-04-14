@@ -3,6 +3,8 @@
     #home{
         display: flex;
         justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
 
     
@@ -17,6 +19,7 @@
     #home{
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100vw;
     }
 
@@ -42,7 +45,6 @@
     }
     .abt-texts h1, h3{
       letter-spacing: 0;
-        /* font-weight: bold; */
     }
     .abt-texts p{
       width: 90vw;
@@ -52,8 +54,6 @@
       text-align: center;
     }
     .circle-container {
-        /* position: relative; */
-        /* margin-top: 20px; */
         width: 320px; 
         height: 320px;
         /* background-color: orange;  */
@@ -62,11 +62,6 @@
         width: 160px;
         height: 160px;
         border-radius: 50%;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* color: white; */
-        
       }
       .circle p, .r-arrow{
         font-size: 15px;
@@ -76,15 +71,6 @@
         height: 35px;
       }
     /* ************************** */
-    /* .logo-comp{
-        width: 100vw;
-        height: 30vh;
-    } */
-    /* .slide-in-image {
-        width: 90%; 
-        height: auto;
-        background-color: red;
-    } */
     /* ***************************** */
     
 
@@ -171,7 +157,10 @@
     .why-container h3{
         font-weight: bold;
     }
-    
+    #carouselExampleInterval{
+      width: 90vw;
+      /* background-color: red; */
+    }
     /* **************************************8 */
     footer{
         display: flex;
