@@ -92,14 +92,19 @@
         height: auto;
     }
     .box-container {
+      
         width: 100%;
         height: 100%;
         gap: 10px;
     }
     .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 100%; 
       height: 100%; 
-      /* background-color: orange; */
+      background-color: orange;
     }
     /* .box:hover .box-text{
         width:100%;
@@ -107,12 +112,12 @@
       }
     .box-text{
         padding-top: 0;
-    } 
+    } */
     .box-text p{
         width: 100%;
-        height: 70%;
+        /* height: 80%; */
         font-size: 18px;
-      } */
+      } 
 
     /* ****************** */
     .discuss{
