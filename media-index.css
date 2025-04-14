@@ -21,6 +21,7 @@
         justify-content: center;
         align-items: center;
         width: 100vw;
+        overflow: hidden;
     }
 
     #typewriter-text {
@@ -78,7 +79,7 @@
     #play-vid{
         display: flex;
         flex-direction: column;
-        width: auto;
+        /* width: auto; */
         height: auto;
     }   
     .vid-cover{
@@ -100,7 +101,7 @@
       height: 100%; 
       /* background-color: orange; */
     }
-    .box:hover .box-text{
+    /* .box:hover .box-text{
         width:100%;
         height:100%;
       }
@@ -111,7 +112,7 @@
         width: 100%;
         height: 70%;
         font-size: 18px;
-      }
+      } */
 
     /* ****************** */
     .discuss{
