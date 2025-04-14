@@ -95,7 +95,7 @@ body{
     padding: 30px;
     display: flex;
     flex-direction: column;
-    height: 105vh;
+    height: auto;
     width: 77vw;
     align-items: center;
     justify-content: center;
@@ -122,7 +122,7 @@ body{
     position: relative;
     margin-top: 20px;
     width: 450px; 
-    height: 450px; 
+    height: 480px; 
   }
 
  
@@ -477,9 +477,10 @@ body{
 
 /* ************************************************************** */
 #why{
+  margin-top: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100vw;
   height: auto;
   /* background-color: aqua; */
@@ -488,9 +489,10 @@ body{
 .why-container{
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  width: 63vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 85%;
   height: auto;
   /* background-color: orange; */
 }
@@ -503,10 +505,10 @@ body{
 .why-container p{
   font-size: 23px;
   font-weight: normal;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 /* <!-- START- CLIENT LIST */
-#client-cover h3{
+/* #client-cover h3{
   color: white;
   text-decoration: underline  rgb(19,82,245);
   text-underline-offset: 10px; 
@@ -523,14 +525,61 @@ body{
   height: 45vh;
   width: 300px;
   overflow: hidden;
-  /* background-color: yellow; */
+  background-color: yellow;
 } 
 #carouselExampleInterval h3{
   color: black;
   text-decoration: underline  rgb(19,82,245);
   text-underline-offset: 10px; 
-} 
+}  */
 /* <!-- END- CLIENTS LIST HERE --> */
+
+.client-logos {
+  margin-top: 20px;
+  padding: 10px;
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+  background-color: grey; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.client-logos h3{
+  color: black;
+  text-decoration: underline  rgb(19,82,245);
+  text-underline-offset: 10px; 
+}
+
+.logo-track {
+  margin-top: 15px;
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+.logo-track img {
+  height: 80%;
+  object-fit: contain;
+  max-height: 100px;
+  /* filter: grayscale(100%); */
+  /* transition: filter 0.3s; */
+}
+
+/* .logo-track img:hover {
+  filter: grayscale(0%);
+} */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 /* *************************************************************************8 */
 /* THE FOOTER BEGINS FROM HERE  */

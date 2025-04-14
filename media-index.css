@@ -106,11 +106,11 @@
       height: 100%; 
       background-color: orange;
     }
-    /* .box:hover .box-text{
+     .box:hover .box-text{
         width:100%;
-        height:100%;
+        height: 90%;
       }
-    .box-text{
+   /* .box-text{
         padding-top: 0;
     } */
     .box-text p{
@@ -150,8 +150,8 @@
         margin-top: 30px;
         height: auto;
         width: 100vw;
-        display: flex;
-        flex-direction: column;
+        /* display: flex; */
+        /* flex-direction: column; */
     }
     
     .why-container{
@@ -163,10 +163,7 @@
     .why-container h3{
         font-weight: bold;
     }
-    #carouselExampleInterval{
-      width: 90vw;
-      /* background-color: red; */
-    }
+   
     /* **************************************8 */
     footer{
         display: flex;

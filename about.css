@@ -167,7 +167,52 @@ body{
     /* background-color: red; */
   }
   /* ********************************************************* */
-
+  .client-logos {
+    margin-top: 20px;
+    padding: 10px;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    background-color: grey; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .client-logos h3{
+    color: black;
+    text-decoration: underline  rgb(19,82,245);
+    text-underline-offset: 10px; 
+  }
+  
+  .logo-track {
+    margin-top: 15px;
+    display: flex;
+    gap: 2.5rem;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .logo-track img {
+    height: 80%;
+    object-fit: contain;
+    max-height: 100px;
+    /* filter: grayscale(100%); */
+    /* transition: filter 0.3s; */
+  }
+  
+  /* .logo-track img:hover {
+    filter: grayscale(0%);
+  } */
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 
 
 /* ************************************************************** */
