@@ -67,7 +67,6 @@ body{
     width: 70vw;
     align-items: center;
     justify-content: center;
-    /* color: white; */
     /* background-color: grey; */
     
   }
@@ -84,19 +83,20 @@ body{
   }
   
   .abt-texts p{
+    text-align: center;
     padding-top: 10px;
     font-size: 20px;
     color: black;
   }
 
-  .selling-point{
+  /* .selling-point{
     display: flex;
     width: 100vw;
     height: 15vh;
     justify-content: space-evenly;
     align-items: center;
     font-weight: bolder;
-    /* background: black; */
+    background: black;
   }
 
   .selling-point p{
@@ -106,7 +106,7 @@ body{
   
   .selling-point .fa-solid{
     color: rgb(19,82,245);
-  }
+  } */
   /* *********************************************************** */
  
   #believes{

@@ -1,6 +1,7 @@
  // TYPEWRITER 
-const textToType = "Your trusted partner for state-of-the-art LED displays,cutting-edge audio-visual solutions, impactful publicity equipments.lorem ipsum ib din sortcnv lorem ipsum ib din sortcnvlorem i";
-const typingSpeed = 15; // Adjust this value (in milliseconds) to control the typing speed
+const textToType = "Passionately delivering solutions that are not only technologically advanced but also seamlessly integrated and user-friendly. \n\n Your trusted partner for state-of-the-art LED displays,cutting-edge audio-visual solutions, impactful publicity equipments."
+
+const typingSpeed = 10; // Adjust this value (in milliseconds) to control the typing speed
 let textIndex = 0;
 const textElement = document.getElementById('typewriter-text');
 

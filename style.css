@@ -37,6 +37,7 @@ body{
   color:black;
 }
 
+
 /* Change the toggler icon to white */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -67,26 +68,21 @@ body{
   /* background-color: blue; */
 }
 
+
 #typewriter-text{
   display: flex;                                                                                                                                    
-  width: 30vw;
+  width: 35vw;
   height: auto;
   text-align: justify;
   border-radius: 10px ;
   border: none;
   padding: 30px;
   color: #fff;
-  font-size: 20px;
+  font-size: 27px;
   border-width: 10px;
-  font-weight: bolder;
-  /* border-left: 5px solid blue; 
-  border-right: 5px solid red ;
-   border-top: 5px solid yellow ; 
-  border-bottom: 5px solid green;
-    */
-  
+  font-weight: lighter;
+  border-left: 5px solid transparent;  
 }
-
 /*  */
 
 /* ********************************************************************************************* */
@@ -103,26 +99,28 @@ body{
     padding: 30px;
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    width: 75vw;
+    height: 105vh;
+    width: 77vw;
     align-items: center;
     justify-content: center;
-    background-image: url(./ubuilding/u3pexels-camcasey-1722183.jpg);
+    /* background-image: url(./ubuilding/u3pexels-camcasey-1722183.jpg); */
+    background-image: url(./ubuilding/exactpexels-eddson-lens-748406628-19124847.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
   }
   
   .abt-texts h1, h3{
-    font-family: fantasy;
+    /* font-family: fantasy; */
     color: white;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: center; 
+    font-weight: bold;
   }
   
   .abt-texts p{
-    font-size: 20px;
-    font-weight: bolder;
+    /* width: 40vw; */
+    font-size: 23px; 
     color: white;
     text-align: center;
   }
