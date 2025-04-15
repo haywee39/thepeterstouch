@@ -28,7 +28,7 @@ body{
 .nav-link {
   color: #fff; /* Default link color */
   margin-left: 60px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .nav-link:hover {
@@ -78,7 +78,7 @@ body{
     color: black;
     text-align: center; 
     text-decoration: underline  rgb(19,82,245);
-    text-underline-offset: 20px; 
+    text-underline-offset: 10px; 
     
   }
   .abt-texts1, .abt-texts2{
