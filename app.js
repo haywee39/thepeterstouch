@@ -22,8 +22,8 @@ const images= [
   'url("./backgrdimg/led.jpg")',
   'url("./backgrdimg/backgrd.jpg")',
   'url("./backgrdimg/redmixr.jpg")',
-  'url("./backgrdimg/mic-conf.jpg")'
-  // 'url("./backgrdimg/led.jpg")'
+  'url("./backgrdimg/mic-conf.jpg")',
+  'url("./backgrdimg/led2.jpg")'
 ];
 let current = 0;
 

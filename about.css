@@ -7,8 +7,6 @@
 body{
     scroll-behavior: smooth;
     background-color: rgb(212,220,231);
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -50,7 +48,6 @@ body{
 #about{
     padding-top: 20vh;
     width: 100vw;
-    /* height: 175vh; */
     height: auto;
     color: black;
     display: flex;
@@ -69,13 +66,11 @@ body{
     width: 70vw;
     align-items: center;
     justify-content: center;
-    /* background-color: grey; */
-    
+    /* background-color: grey; */  
   }
   
    
   .abt-texts h1{
-    /* font-family: fantasy; */
     font-size: 45px;
     color: black;
     text-align: center; 
@@ -83,13 +78,61 @@ body{
     text-underline-offset: 10px; 
     
   }
-  
+  .abt-texts1, .abt-texts2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 100%;
+    height: auto;
+    /* background-color: yellowgreen; */
+  }
+  .abt-texts1 .pic1{
+    float: left;
+    margin: 15px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    shape-outside: circle();
+    clip-path: circle();
+    object-fit: cover;
+  }
+  .abt-texts1 .pic2{
+    float: right;
+    margin: 15px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    shape-outside: circle();
+    clip-path: circle();
+    object-fit: cover;
+  }
   .abt-texts p{
     text-align: center;
     padding-top: 10px;
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: normal;
     color: black;
+  }
+  .abt-texts2 .picA{
+    float: left;
+    margin: 15px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    shape-outside: circle();
+    clip-path: circle();
+    object-fit: cover;
+  }
+  .abt-texts2 .picB{
+    float: right;
+    margin: 15px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    shape-outside: circle();
+    clip-path: circle();
+    object-fit: cover;
   }
 
   /* *********************************************************** */

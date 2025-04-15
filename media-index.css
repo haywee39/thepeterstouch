@@ -25,10 +25,10 @@
     }
 
     #typewriter-text {
-        margin-top: 14vh;
-        width: 97vw;
+        margin-top: 0;
+        width: 95vw;
         padding: 8px;
-        font-size: 23px;
+        font-size: 22px;
       }
     /* ************************** */
     /*  */
@@ -50,6 +50,7 @@
     .abt-texts p{
       width: 90vw;
       font-size: 20px;
+      font-weight: normal;
       
       color: white;
       text-align: center;
