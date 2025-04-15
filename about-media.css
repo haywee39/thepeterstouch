@@ -84,15 +84,16 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 50vh;
+        height: auto;
         padding: 20px;
-        justify-content: center;
+        justify-content: space-evenly;
+        gap: 10px;
         align-items: center;
         /* background-color: orange; */
       }
       .mid-pic img{
-        width: 80%;
-        height: 100%;
+        width: 90%;
+        height: 40%;
       }
      
       .abt-texts h1{
@@ -153,7 +154,7 @@
       }
       .belief-each h1{
         font-size: 25px;
-        font-weight: bold;
+        /* font-weight: bold; */
       }
 
       .belief-each p {

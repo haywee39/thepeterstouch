@@ -161,8 +161,8 @@
         width: 95%;
         height: auto;
     }
-    .why-container h3{
-        font-weight: bold;
+    .why-container h1{
+        /* font-weight: bold; */
     }
    
     /* **************************************8 */

@@ -8,6 +8,7 @@ body, html{
     scroll-behavior: smooth;
     background-color: rgb(212,220,231);
     overflow-x: hidden;
+    font-family: montserrat;
     
 }
 
@@ -76,12 +77,13 @@ body, html{
   text-align: center;
   padding: 30px;
   color: #fff;
-  font-size: 25px;
-  font-weight: lighter;
+  font-size: 23px;
+  text-shadow: black 5px 5px 5px;
+  font-weight: normal;
   /* background-color: yellowgreen; */
 }
 
-#typewriter-text{
+/* #typewriter-text{
   background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
   background-size: 1000% 1000%;
   overflow: hidden;
@@ -91,7 +93,7 @@ body, html{
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
-}
+} */
 /*  */
 
 /* ********************************************************************************************* */
@@ -119,6 +121,8 @@ body, html{
   }
   
   .abt-texts h1, h3{
+    font-family: montserrat;
+    font-weight: 800;
     color: white;
     text-align: center; 
     font-weight: bold;
@@ -128,7 +132,8 @@ body, html{
     font-size: 23px; 
     color: white;
     text-align: center;
-    font-weight: lighter;
+    text-shadow: black 2px 2px 2px;
+    font-weight: normal;
   }
   /* styling for the 4circles  */
   .circle-container {
@@ -150,6 +155,10 @@ body, html{
     align-items: center;
     color: white;
     
+  }
+  .circle p{
+    text-shadow: none;
+    font-size: 18px;
   }
   .r-arrow{
     display: flex;
@@ -353,9 +362,13 @@ body, html{
   width: 30%;
   /* background-color: yellow; */
 }
+.what-we-do h3{
+  font-family: montserrat;
+  font-weight: 800;
+}
 .what-we-do p{
-  font-size:20px;
-  font-weight: lighter;
+  font-size:18px;
+  font-weight: light;
 }
 .call-pro{
   display: flex;
@@ -364,8 +377,8 @@ body, html{
   justify-content: flex-start;
   height: auto;
   width: 20%;
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 18px;
+  font-weight: normal;
   /* background-color: orange; */
 }
 
@@ -380,8 +393,8 @@ body, html{
   height: 60px;
   background: none;
   border: 1px solid white;
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 18px;
+  font-weight: normal;
   color: white;
   text-decoration: none;
   z-index: 1;
@@ -395,9 +408,9 @@ body, html{
   right: 0;
   width: 10px;
   height: 100%;
-  /* background: yellowgreen; */
-  background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
-  background-size: 400% 400%;
+  background: red;
+  /* background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff); */
+  /* background-size: 400% 400%; */
   z-index: -1;
   transition: .5s;
 
@@ -471,8 +484,6 @@ body, html{
   color: white;
   text-align: center;
   background-color: rgb(19,82,245);
-  /* background: linear-gradient(80deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
-  background-size: 800% 800%; */
   left: 0;
   bottom: 0;
   width: 0;
@@ -495,8 +506,8 @@ body, html{
 .box-text p{
   width: 90%;
   height: 65%;
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 18px;
+  font-weight: normal;
   color: white;
   /* background-color: orange; */
 }
@@ -520,18 +531,21 @@ body, html{
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 85%;
+  width: 80%;
   height: auto;
   /* background-color: orange; */
 }
 .why-container h3{
+  font-family: montserrat;
+  font-size: 30px;
+  font-weight: 800;
   color: black;
-  text-decoration: underline  rgb(19,82,245);
-  text-underline-offset: 10px; 
+  /* text-decoration: underline  rgb(19,82,245); */
+  /* text-underline-offset: 10px;  */
 }
 
 .why-container p{
-  font-size: 23px;
+  font-size: 18px;
   font-weight: normal;
   /* padding-top: 10px; */
 }
@@ -544,16 +558,19 @@ body, html{
   height: 30vh;
   overflow: hidden;
   position: relative;
-  background-color: grey; 
+  background-color: black; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.client-logos h3{
-  color: black;
-  text-decoration: underline  rgb(19,82,245);
-  text-underline-offset: 10px; 
+.client-logos h1{
+  font-family: montserrat;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  /* text-decoration: underline  rgb(19,82,245); */
+  /* text-underline-offset: 10px;  */
 }
 
 .logo-track {
@@ -598,7 +615,8 @@ footer{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-weight: lighter;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 /* ************************ */
@@ -631,7 +649,7 @@ footer{
   background-color: rgb(19,82,245);
 }
 .ban p{
-  font-size: 20px;
+  /* font-size: 18px; */
 }
 .socials{
   display: flex;
@@ -670,7 +688,7 @@ footer{
  .address a{
    text-decoration: none;
    color:white;
-   font-size: 20px;
+   /* font-size: 18px; */
    padding-left: 15px;
    
  }
@@ -687,6 +705,7 @@ footer{
   justify-content: center;
   align-items: last baseline;
   text-align: center;
+  font-size: 16px;
   /* background-color: gold; */
 }
 
