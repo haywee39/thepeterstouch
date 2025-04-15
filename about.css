@@ -87,6 +87,18 @@ body{
     height: auto;
     /* background-color: yellowgreen; */
   }
+  .mid-pic{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    padding: 20px;
+    justify-content: space-between;
+    /* background-color: orange; */
+  }
+  .mid-pic img{
+    width: 40%;
+    height: 100%;
+  }
   .abt-texts1 .pic1{
     float: left;
     margin: 15px;
