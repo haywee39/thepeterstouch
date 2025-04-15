@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
+body, html{
     scroll-behavior: smooth;
     background-color: rgb(212,220,231);
+    overflow-x: hidden;
+    
 }
 
 
@@ -55,6 +57,7 @@ body{
 }
 
 .content {
+  margin-top: 10vh;
   position: relative;
   width: 100%;
   height: 100%;
@@ -66,18 +69,28 @@ body{
 
 
 #typewriter-text{
+  margin-top: 55px;
   display: flex;                                                                                                                                    
-  width: 35vw;
+  width: 42vw;
   height: auto;
-  text-align: justify;
-  border-radius: 10px ;
-  border: none;
+  text-align: center;
   padding: 30px;
   color: #fff;
-  font-size: 27px;
-  border-width: 10px;
-  font-weight: normal;
-  /* border-left: 5px solid transparent;   */
+  font-size: 25px;
+  font-weight: lighter;
+  /* background-color: yellowgreen; */
+}
+
+#typewriter-text{
+  background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
+  background-size: 1000% 1000%;
+  overflow: hidden;
+  animation: BackgroundGradient 5s ease infinite;
+}
+@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 /*  */
 
@@ -115,7 +128,7 @@ body{
     font-size: 23px; 
     color: white;
     text-align: center;
-    font-weight: normal;
+    font-weight: lighter;
   }
   /* styling for the 4circles  */
   .circle-container {
@@ -145,11 +158,26 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: blue;
+    /* background-color: yellowgreen; */
     text-decoration: none;
     color: white;
     
   }
+  .r-arrow:hover{
+    background-color: black;
+    color: white;
+  }
+  .r-arrow, .arrow{
+    background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
+    background-size: 400% 400%;
+    /* overflow: hidden; */
+    /* animation: BackgrdGradient 5s ease infinite; */
+  }
+  /* @keyframes BackgrdGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  } */
   .circle{
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
@@ -221,7 +249,6 @@ body{
     display: flex;
     width:100vw;
     height: auto;
-    /* overflow: hidden; */
     align-items: center;
     justify-content:center;
     pointer-events: none;
@@ -251,7 +278,7 @@ body{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: blue;
+  /* background-color: yellowgreen; */
   text-decoration: none;
   top: -50;
   right: 50;
@@ -259,10 +286,7 @@ body{
   cursor: pointer;
   pointer-events: visible;
 }
-.r-arrow:hover{
-  background-color: black;
-  color: white;
-}
+
 .arrow:hover{
   background-color: black;
   color: white;
@@ -312,13 +336,13 @@ body{
 }
 /* **************************** */
 /* Optional: Style for video controls to ensure they are visible */
-/* .rhombus-video::-webkit-media-controls {
-  overflow: visible !important;  For Chrome/Safari 
+.rhombus-video::-webkit-media-controls {
+  overflow: visible !important;  /*For Chrome/Safari */
 }
 
 .rhombus-video::-moz-media-controls {
-  overflow: visible !important;  For Firefox 
-} */
+  overflow: visible !important;  /*For Firefox*/ 
+}
 /* ********************************* */
 .what-we-do{
   display: flex;
@@ -371,7 +395,9 @@ body{
   right: 0;
   width: 10px;
   height: 100%;
-  background: rgb(19,82,245);
+  /* background: yellowgreen; */
+  background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
+  background-size: 400% 400%;
   z-index: -1;
   transition: .5s;
 
@@ -400,7 +426,7 @@ body{
   gap: 20px;
   width: 90%;
   height: 90%;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: #f1c40f; */
 }
 
@@ -445,6 +471,8 @@ body{
   color: white;
   text-align: center;
   background-color: rgb(19,82,245);
+  /* background: linear-gradient(80deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
+  background-size: 800% 800%; */
   left: 0;
   bottom: 0;
   width: 0;
@@ -507,32 +535,8 @@ body{
   font-weight: normal;
   /* padding-top: 10px; */
 }
-/* <!-- START- CLIENT LIST */
-/* #client-cover h3{
-  color: white;
-  text-decoration: underline  rgb(19,82,245);
-  text-underline-offset: 10px; 
-  margin-bottom: 20px;
-}
-
-#client-list img{
-  width: 100%;
-  height: 100%;
-}
-
-
-#carouselExampleInterval{
-  height: 45vh;
-  width: 300px;
-  overflow: hidden;
-  background-color: yellow;
-} 
-#carouselExampleInterval h3{
-  color: black;
-  text-decoration: underline  rgb(19,82,245);
-  text-underline-offset: 10px; 
-}  */
-/* <!-- END- CLIENTS LIST HERE --> */
+/* ***************************************** */
+/* <!--START- CLIENTS LIST HERE --> */
 
 .client-logos {
   margin-top: 20px;
