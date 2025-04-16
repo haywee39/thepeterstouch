@@ -82,20 +82,17 @@
       }
       .mid-pic{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         width: 100vw;
         height: auto;
-        padding: 20px;
-        justify-content: space-evenly;
-        gap: 10px;
+        padding: 10px;
         align-items: center;
+        justify-content: space-evenly;
+        gap: 5px;
+        
         /* background-color: orange; */
       }
-      .mid-pic img{
-        width: 90%;
-        height: 40%;
-      }
-     
+      
       .abt-texts h1{
         font-size:25px;
         text-align: justify;
@@ -142,26 +139,26 @@
         display: flex;
         justify-content: center;
         width: 98vw;
-        height: 105vh;
-        gap: 17px;
+        height: auto;
+        gap: 15px;
+        margin-bottom: 10px;
         /* background-color: chartreuse; */
       }
       .belief-each {
         display: flex;
-        width: 85vw;
-        height: 30vh;
+        width: 90%;
+        height: auto;
         text-align: center;
         justify-content: center;
         /* padding-left: 0; */
       }
       .belief-each h1{
         font-size: 25px;
-        /* font-weight: bold; */
       }
 
       .belief-each p {
-        width: 95%;
-        height: 20vh;
+        width: 90%;
+        height: auto;
         font-size: 17px;
         /* background-color: blue; */
       }

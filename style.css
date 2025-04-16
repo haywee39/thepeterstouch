@@ -83,18 +83,6 @@ body, html{
   /* background-color: yellowgreen; */
 }
 
-/* #typewriter-text{
-  background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
-  background-size: 1000% 1000%;
-  overflow: hidden;
-  animation: BackgroundGradient 5s ease infinite;
-}
-@keyframes BackgroundGradient {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-} */
-/*  */
 
 /* ********************************************************************************************* */
   /* WE PROFER SOLUTIONS TO PROBLEMS */
@@ -179,14 +167,7 @@ body, html{
   .r-arrow, .arrow{
     background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
     background-size: 400% 400%;
-    /* overflow: hidden; */
-    /* animation: BackgrdGradient 5s ease infinite; */
   }
-  /* @keyframes BackgrdGradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-  } */
   .circle{
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
@@ -409,8 +390,6 @@ body, html{
   width: 10px;
   height: 100%;
   background: red;
-  /* background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff); */
-  /* background-size: 400% 400%; */
   z-index: -1;
   transition: .5s;
 
@@ -439,8 +418,6 @@ body, html{
   gap: 20px;
   width: 90%;
   height: 90%;
-  /* overflow: hidden; */
-  /* background-color: #f1c40f; */
 }
 
 .box {
@@ -540,8 +517,6 @@ body, html{
   font-size: 30px;
   font-weight: 800;
   color: black;
-  /* text-decoration: underline  rgb(19,82,245); */
-  /* text-underline-offset: 10px;  */
 }
 
 .why-container p{
@@ -569,8 +544,6 @@ body, html{
   font-size: 30px;
   font-weight: 800;
   color: white;
-  /* text-decoration: underline  rgb(19,82,245); */
-  /* text-underline-offset: 10px;  */
 }
 
 .logo-track {
@@ -585,13 +558,7 @@ body, html{
   height: 80%;
   object-fit: contain;
   max-height: 100px;
-  /* filter: grayscale(100%); */
-  /* transition: filter 0.3s; */
 }
-
-/* .logo-track img:hover {
-  filter: grayscale(0%);
-} */
 
 @keyframes scroll {
   0% {
@@ -649,7 +616,7 @@ footer{
   background-color: rgb(19,82,245);
 }
 .ban p{
-  /* font-size: 18px; */
+  font-weight: bolder;
 }
 .socials{
   display: flex;
