@@ -90,7 +90,7 @@ body{
     padding: 25px;
     width: 100%;
     height: auto;  
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
   }
   .mid-pic{
     display: flex;
@@ -146,7 +146,7 @@ body{
     height: 240px;
     width: 240px;
     border-radius: 50%;
-    shape-outside: circle();
+    shape-outside: circle(-30%);
     clip-path: circle();
     object-fit: cover;
     transform: translateX(100%); /* Start off-screen to the left */
@@ -159,7 +159,7 @@ body{
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    shape-outside: circle();
+    shape-outside: circle(-30%);
     clip-path: circle();
     object-fit: cover;
     transform: translateX(-100%); /* Start off-screen to the left */

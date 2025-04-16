@@ -116,13 +116,13 @@
       .abt-texts1 .pic1, .abt-texts2 .picA{
         height: 130px;
         width: 130px;
-        border-radius: 30%;
+        /* border-radius: 30%; */
         /* object-fit: cover; */
       }
       .abt-texts1 .pic2, .abt-texts2 .picB{
         height: 210px;
         width: 210px;
-        border-radius: 30%;
+        /* border-radius: 30%; */
       }
      
 
