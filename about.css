@@ -60,13 +60,14 @@ body{
 
   
   .abt-texts{
-    padding-top: 5vh;
+    padding-top: 6vh;
     display: flex;
     flex-direction: column;
     height: auto;
     width: 68vw;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    text-align: left;
     /* background-color: grey; */  
   }
   
@@ -85,11 +86,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
     padding: 25px;
     width: 100%;
-    height: auto;
-    
-    /* background-color: yellowgreen; */
+    height: auto;  
+    background-color: yellowgreen;
   }
   .mid-pic{
     display: flex;
@@ -102,17 +103,18 @@ body{
   .mid-A, .mid-B{
     width: 40%;
     height: 100%;
-    transform: translateX(100%); /* Start off-screen to the left */
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
   }
+  .mid-A img, .mid-B img{
+    width: 100%;
+    height: 100%;
+  }
+  /* ****************** */
   .abt-texts1 .pic1{
     float: left;
-    margin: 20px;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    shape-outside: circle();
+    margin: 15px;
+    height: 240px;
+    width: 240px;
+    shape-outside: circle(-30%);
     clip-path: circle();
     object-fit: cover;
     transform: translateX(100%); /* Start off-screen to the left */
@@ -121,11 +123,10 @@ body{
   }
   .abt-texts1 .pic2{
     float: right;
-    margin: 20px;
+    margin: 15px;
     height: 300px;
     width: 300px;
-    border-radius: 50%;
-    shape-outside: circle();
+    shape-outside: circle(-30%);
     clip-path: circle();
     object-fit: cover;
     transform: translateX(-100%); /* Start off-screen to the left */
@@ -142,8 +143,8 @@ body{
   .abt-texts2 .picA{
     float: left;
     margin: 20px;
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
     border-radius: 50%;
     shape-outside: circle();
     clip-path: circle();
@@ -154,7 +155,7 @@ body{
   }
   .abt-texts2 .picB{
     float: right;
-    margin: 20px;
+    margin: 15px;
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -167,21 +168,16 @@ body{
   }
 
   .mid-A{
+    transform: translateX(100%); /* Start off-screen to the left */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  .mid-B{
     transform: translateX(-100%); /* Start off-screen to the left */
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
   }
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%); /* Move in from the right */
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0); /* End at the original position */
-      opacity: 1;
-    }
-  }
-
+ 
   /* *********************** */
   /* PICS AT TOP LEFT TO SLIDE FROM LEFT  */
   .abt-texts1 .pic1.visible, .mid-A, .abt-texts2 .picA.visible {
@@ -213,20 +209,6 @@ body{
       opacity: 1;
     }
   }
-
-  /* .abt-texts2 .picB.visible {
-    animation: slideIn 1s ease forwards;
-  }
-  @keyframes slideIn {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  } */
 
   /* *********************************************************** */
  
