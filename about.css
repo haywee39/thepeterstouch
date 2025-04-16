@@ -88,6 +88,7 @@ body{
     padding: 25px;
     width: 100%;
     height: auto;
+    
     /* background-color: yellowgreen; */
   }
   .mid-pic{
@@ -96,11 +97,14 @@ body{
     height: 50vh;
     padding: 20px;
     justify-content: space-between;
-    /* background-color: orange; */
+      /* background-color: orange; */
   }
-  .mid-pic img{
+  .mid-A, .mid-B{
     width: 40%;
     height: 100%;
+    transform: translateX(100%); /* Start off-screen to the left */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
   }
   .abt-texts1 .pic1{
     float: left;
@@ -111,6 +115,9 @@ body{
     shape-outside: circle();
     clip-path: circle();
     object-fit: cover;
+    transform: translateX(100%); /* Start off-screen to the left */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
   }
   .abt-texts1 .pic2{
     float: right;
@@ -121,6 +128,9 @@ body{
     shape-outside: circle();
     clip-path: circle();
     object-fit: cover;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
   }
   .abt-texts p{
     text-align: center;
@@ -138,6 +148,9 @@ body{
     shape-outside: circle();
     clip-path: circle();
     object-fit: cover;
+    transform: translateX(100%); /* Start off-screen to the left */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
   }
   .abt-texts2 .picB{
     float: right;
@@ -148,7 +161,72 @@ body{
     shape-outside: circle();
     clip-path: circle();
     object-fit: cover;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
   }
+
+  .mid-A{
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%); /* Move in from the right */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); /* End at the original position */
+      opacity: 1;
+    }
+  }
+
+  /* *********************** */
+  /* PICS AT TOP LEFT TO SLIDE FROM LEFT  */
+  .abt-texts1 .pic1.visible, .mid-A, .abt-texts2 .picA.visible {
+    animation: slideInLeft 1s ease forwards;
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%); /* Move in from the right */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); /* End at the original position */
+      opacity: 1;
+    }
+  }
+  /* *********************************** */
+   /* PICS AT BOTTOM RYT TO SLIDE FROM RYT  */
+  .abt-texts2 .picB.visible, .mid-B, .abt-texts1 .pic2.visible {
+    animation: slideInRight 1s ease forwards;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%); /* Move in from the right */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); /* End at the original position */
+      opacity: 1;
+    }
+  }
+
+  /* .abt-texts2 .picB.visible {
+    animation: slideIn 1s ease forwards;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  } */
 
   /* *********************************************************** */
  

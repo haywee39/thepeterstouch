@@ -21,9 +21,10 @@ const homeSection = document.getElementById('home');
 const images= [
   'url("./backgrdimg/led.jpg")',
   'url("./backgrdimg/backgrd.jpg")',
+  'url("./backgrdimg/led2.jpg")',
   'url("./backgrdimg/redmixr.jpg")',
-  'url("./backgrdimg/mic-conf.jpg")',
-  'url("./backgrdimg/led2.jpg")'
+  'url("./backgrdimg/mic-conf.jpg")'
+  
 ];
 let current = 0;
 
@@ -37,18 +38,6 @@ changeBackground();
 setInterval(changeBackground, 3000);
 
 // ***************************************
-// var i = 0;
-// var txt = 'Your trusted partner for state-of-the-art LED displays,cutting-edge audio-visual solutions, impactful publicity equipments.lorem ipsum ib din sortcnv lorem ipsum ib din sortcnvlorem i' 
-//              /* The text */
-// var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-// function typeWriter() {
-//   if (i < txt.length) {
-//     document.getElementById("msg").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
 // ***************************************************************
 
 // COMPANY LOGO APPEARS ON Slide in TO THE POINT 
