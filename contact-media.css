@@ -7,24 +7,17 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
+/* ********************************************* */
 @media screen and (max-width: 1023px){
     #cont{
-        height: 100vh;
+      margin-top: 15vh;
+      height: 100vh;
       }
       .contact-texts{
         margin-top: 12vh;
         width: 90vw;
-        height: 35vh;
+        /* height: 35vh; */
+        height: auto;
       }
       .contact-texts h3{
           font-weight: bold;
@@ -38,7 +31,8 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 135vh;
+  /* height: 135vh; */
+  height: auto;
   /* background-color: orange; */
 }
 
