@@ -8,6 +8,7 @@ body{
     scroll-behavior: smooth;
     background-color: rgb(212,220,231);
     font-family: montserrat;
+    overflow-x: hidden;
 }
 
 
@@ -24,7 +25,7 @@ body{
 
 /*navbar link hover effect */
 .nav-link {
-  color: #fff; /* Default link color */
+  color: #fff; 
   margin-left: 60px;
   font-size: 18px;
 }
@@ -53,25 +54,20 @@ body{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  /* height: 170vh; */
   height: auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* background-color: purple; */
-  
-
 }
 /* ******************************************** */
 .serv-texts{
   margin-top: 25vh;
   display: flex;
   flex-direction: column;
-  /* height: 40vh; */
   height: auto;
   width: 55vw;
   align-items: center;
   justify-content: center;
-  /* background-color: grey; */
-  
+  /* background-color: grey;   */
 }
 
  
@@ -79,73 +75,17 @@ body{
   font-size: 35px;
   font-weight: 800;
   color: black;
-  text-align: center; 
-  
+  text-align: center;   
 }
 
 .serv-texts p{
   text-align: center;
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
 }
 /* ************************************************************** */
-/* STYLE FOR THE 360 IMAGE SLIDER */
-
-.banner{
-  margin-top: 20px;
-  width: 100vw;
-  height: 105vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  /* background-color: aqua; */
-}
-
-
-
-.banner .slider{
-  /* background-color: rgb(19,82,245); */
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 250px;
-  top: 10%;
-  left: calc(50% - 100px);
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-  animation: autoRun 20s linear infinite;
-  z-index: 2;
-}
-@keyframes autoRun{
-  from{
-      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-  }to{
-      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
-  }
-}
-
-.banner .slider .item{
-  position: absolute;
-  inset: 0 0 0 0;
-  transform: 
-      rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-      translateZ(500px);
-}
-.banner .slider .item img{
-  width: 80%;
-  height: 90%;
-  object-fit: cover;
-}
-
-
 /* *************************************************************************8 */
-
 
 /* Section styling */
 #list-serve {
@@ -164,7 +104,8 @@ body{
   justify-content: center;
   align-items: center;
   width: 40vw;
-  height: 40vh;
+  height: auto;
+  gap: 10px;
   /* background:rgb(200,210,221); */
   transform: translateX(100%);
   opacity: 0;
@@ -185,12 +126,6 @@ body{
   }
 }
 /* ************************************************** */
-.vertical-line {
-  width: 5px;
-  height: 60%;
-  background-color: rgb(19,82,245); 
-}
-
 /* ********************************************************* */
 /* START ITEMS ON THE RIGHT */
 .right-container, .left-container {
@@ -211,7 +146,8 @@ body{
   justify-content: center;
   align-items: center;
   width: 40vw;
-  height: 40vh;
+  height: auto;
+  gap: 10px;
   transform: translateX(-100%); /* Start off-screen to the left */
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
@@ -252,37 +188,89 @@ body{
   color: black;
   /* background-color: blue; */
 }
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* STYLE FOR THE 360 IMAGE SLIDER */
+
+.banner{
+  margin-top: 20px;
+  width: 100vw;
+  height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+.banner .slider{
+  /* background-color: rgb(19,82,245); */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  top: 15%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 25s linear infinite;
+  z-index: 2;
+}
+@keyframes autoRun{
+  from{
+      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }to{
+      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item{
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: 
+      rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+      translateZ(500px);
+}
+.banner .slider .item img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  /* background-color: orange; */
+}
+
 
 /* &******************************************************************************** */
 /* THE FOOTER BEGINS FROM HERE  */
 footer{
   margin-top: 30px;
-  padding: 20px;
   background-color: rgb(19,82,245);
   width: 100vw;
   color: white;
   height: auto;
-  gap: 20px;
+  gap: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  font-size: 18px;
-  font-weight: normal;
 }
 /* ************************ */
 .one{
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 15%;
   height: 100%;
   /* background-color: #A04000; */
 }
 .two{
   display: flex;
-  justify-content: space-evenly;
-  width: 60%;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px 0; */
+  width: 50%;
   height: 100%;
-  /* background-color: #A04000;  */
+  /* background-color: lime;  */
 }
 /* ******************************** */
 
@@ -294,10 +282,10 @@ footer{
   height: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   overflow: hidden;
   position: relative;
-  background-color: rgb(19,82,245);
+  /* background-color: rgb(19,82,24); */
   
 }
 .ban p{
@@ -308,8 +296,9 @@ footer{
   display: flex;
   width: 100%;
   height: 40px;
-  justify-content: space-evenly;
-  align-items: center;
+  gap: 30px;
+  justify-content: left;
+  align-items: left;
   /* background-color: yellow; */
   
 }
@@ -327,11 +316,12 @@ footer{
 .address{
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 45vw;
   height: auto;
-  justify-content: center;
-  align-items:flex-start;
+  justify-content: left;
+  align-items:left;
   /* background-color: red; */
+  padding-top: 10px;
   
 }
 .address .fa-brands{
@@ -342,7 +332,7 @@ footer{
  .address a{
    text-decoration: none;
    color:white;
-   font-size: large;
+   font-size: normal;
    padding-left: 15px;
    
  }

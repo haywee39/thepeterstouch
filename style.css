@@ -29,8 +29,8 @@ body, html{
 /*navbar link hover effect */
 .nav-link {
   color: #fff;
-  margin-left: 50px;
-  font-size: 20px;
+  margin-left: 60px;
+  font-size: 18px;
 }
 
 .nav-link:hover {

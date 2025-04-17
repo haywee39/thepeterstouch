@@ -8,6 +8,7 @@ body{
     scroll-behavior: smooth;
     background-color: rgb(212,220,231);
     font-family: montserrat;
+    overflow-x: hidden;
 }
 
 
@@ -25,9 +26,9 @@ body{
 
 /*navbar link hover effect */
 .nav-link {
-  color: #fff; /* Default link color */
-  margin-left: 50px;
-  font-size: 20px;
+  color: #fff; 
+  margin-left: 60px;
+  font-size: 18px;
 }
 
 .nav-link:hover {

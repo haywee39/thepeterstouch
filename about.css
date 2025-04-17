@@ -29,7 +29,7 @@ body,html{
 .nav-link {
   color: #fff; /* Default link color */
   margin-left: 60px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav-link:hover {
