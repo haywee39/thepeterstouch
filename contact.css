@@ -74,9 +74,6 @@ body{
     font-weight: 800;
     color: black;
     text-align: center; 
-    /* text-decoration: underline  rgb(19,82,245);
-    text-underline-offset: 10px;  */
-    
   }
   
   .contact-texts p{
@@ -86,13 +83,45 @@ body{
     color: black;
   }
   /* ************************************************************** */
-
+  .talk{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    /* background-color: purple; */
+  }
+  .talk-A{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    height:100%;
+    /* background-color: orange; */
+  }
+  .talk-A i{
+    background-color: rgb(19,82,245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+  }
+  .talk-A h3{
+    font-weight: bold;
+  }
+  .talk-A p{
+    font-size: 18px;
+  }
   /* ****************************************** */
 .contact-form{
-  margin-top: 4vh;
+  /* margin-top: 4vh; */
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   width: 100vw;
   height: 100vh;
   /* background-color: orange; */
@@ -111,8 +140,6 @@ body{
   background-color: rgb(229,229,229);
   /* background-color: red; */
   color: white;
-  /* gap: 70px; */
-
 }
 
 form h3{
