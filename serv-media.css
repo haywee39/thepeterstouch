@@ -63,6 +63,7 @@
    @media screen and (max-width: 1023px) {
     #serv{
       /* height: 100vh; */
+      margin-top: 20vh;
       height: auto;
     }
     .serv-texts{

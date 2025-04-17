@@ -55,7 +55,7 @@ body{
   align-items: center;
   width: 100vw;
   height: auto;
-  /* margin-top: 20px; */
+  margin-top: 20px;
   /* background-color: purple; */
 }
 /* ******************************************** */
@@ -267,7 +267,6 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 10px 0; */
   width: 50%;
   height: 100%;
   /* background-color: lime;  */
@@ -341,25 +340,6 @@ footer{
    color: black;
  }
 /* ****************************************  */
-.dev{
-  display: flex;
-  width: 20vw;
-  height: 40vh;
-  color: white;  
-  justify-content: center;
-  align-items: last baseline;
-  font-size: 16px;
-  text-align: center;
-  /* background-color: gold; */
-}
-
-.dev a{
-  color: white;
-  text-decoration: none;  
-}
-.dev a:hover{
-  color: black;
-}
 
 .tag{
  text-shadow:2px 2px 2px grey;

@@ -90,7 +90,8 @@ textarea{
   justify-content: center;
   align-items: center;
 }
-.one, .two{
+.one{
+  display: flex;
   width: 100%;
   height: auto;
   /* background-color: #A04000; */
@@ -98,27 +99,17 @@ textarea{
 .two{
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 10px;
+  /* background-color: lime; */
 }
 
 .ban{
-  width: 45vw;
+  width: 100%;
+  padding-left: 25px;
 }
-.address, .dev{
+.address{
   width: 100%;
 }
-.dev{
-  align-items: first baseline;
-  height: auto;
-
-}
-
-.foot{
-  display: flex;
-  width: 100vw;
-  height: 100%;
-}
-
-
 
 }
