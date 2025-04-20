@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    scroll-behavior: smooth;
+    background-color: rgb(212,220,231);
+    font-family: montserrat;
+    overflow-x: hidden;
+}
+
+
+/* START:STYLING  FOR THE NAVBAR STARTS FROM HERE */
+
+/* General navbar styles */
+.navbar{
+  background-color: rgb(19,82,245) !important;
+}
+   /*CSS for active link */
+ .nav-link.active {
+  color: white !important;
+  text-decoration: underline;
+  text-underline-offset: 10px; 
+}
+
+/*navbar link hover effect */
+.nav-link {
+  color: #fff; /* Default link color */
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: black; /* Hover color */
+}
+
+/* Change the toggler icon to white */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&& */
+  
+  /* END: STYLING FOR THE NAVBAR ENDS HERE */
+  
+/* ********************************************************************* */
+.projects-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .projects-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .projects-header h2 {
+    font-size: 32px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .project-description {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .project-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    animation: slideUp 0.4s ease-out;
+  }
+
+  @keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+  }
+
+  .close-btn:hover {
+    color: #000;
+  }
+
+
+
+
+
+
+
+ /* ********************************************************* */
+ .client-logos {
+    margin-top: 20px;
+    padding: 10px;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(19,82,245); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .client-logos h1{
+    font-family: montserrat;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .logo-track {
+    margin-top: 15px;
+    display: flex;
+    gap: 2.5rem;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .logo-track img {
+    height: 80%;
+    object-fit: contain;
+    max-height: 100px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+/* ************************************************************** */
+/* THE FOOTER BEGINS FROM HERE  */
+footer{
+  /* margin-top: 30px; */
+  background-color: rgb(19,82,245);
+  width: 100vw;
+  color: white;
+  height: auto;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ************************ */
+.one{
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+  height: 100%;
+  /* background-color: #A04000; */
+}
+.two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  /* background-color: lime;  */
+}
+/* ******************************** */
+
+/* ************* */
+.ban{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  overflow: hidden;
+  position: relative;
+  /* background-color: rgb(19,82,24); */
+  
+}
+.ban p{
+  font-weight: bolder;
+}
+
+.socials{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  gap: 30px;
+  justify-content: left;
+  align-items: left;
+  /* background-color: yellow; */
+  
+}
+
+.socials a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.socials a:hover{
+  color: black;
+}
+/* ********************************************** */
+.address{
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  height: auto;
+  justify-content: left;
+  align-items:left;
+  /* background-color: red; */
+  padding-top: 10px;
+  
+}
+.address .fa-brands{
+  text-decoration: none;
+  color: white;
+ }
+ 
+ .address a{
+   text-decoration: none;
+   color:white;
+   font-size: normal;
+   padding-left: 15px;
+   
+ }
+ 
+ .address a:hover{
+   color: black;
+ }
+/* ****************************************  */
+
+.tag{
+ text-shadow:2px 2px 2px grey;
+ animation:bayo 2s ease 1s infinite;
+}
+
+@keyframes bayo{
+
+ 0%{
+    transform:rotateX(-45deg);
+}
+ 50%{
+    transform:rotateY(45deg);
+}
+}
