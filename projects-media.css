@@ -1,17 +1,17 @@
 @media screen and (max-width: 1023px) {
-    #serv{
-      margin-top: 12vh;
+    .projects-texts{
+      padding-top: 18vh;
       height: auto;
     }
-    .serv-texts{
+    .projects-texts{
       width: 100vw;
       height: auto;
     }
-    .serv-texts h3{
+    .projects-texts h3{
         font-weight: bold;
     }
-    .serv-texts p{
-        width: 90%;
+    .projects-texts p{
+        width: 95%;
         text-align: center;
         padding-top: 10px;
         font-size: 18px;
