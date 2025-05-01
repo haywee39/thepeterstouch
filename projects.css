@@ -133,10 +133,9 @@ body,html{
 
   /* Modal Styles */
   .modal {
-    margin-top: 5vh;
     display: none;
     position: fixed;
-    z-index: 999;
+    /* z-index: 999; */
     left: 0; 
     top: 0;
     width: 100%; 
@@ -145,6 +144,7 @@ body,html{
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.3s ease-in-out;
+    z-index: 10000;
   }
 
   @keyframes fadeIn {
@@ -153,12 +153,6 @@ body,html{
   }
 
   .modal-content {
-    background: red;
-    margin-top: 10vh;
-    padding: 30px;
-    border-radius: 10px;
-  
-    /* max-width: 600px; */
     width: 65%;
     height: 90%;
     position: relative;
@@ -177,8 +171,8 @@ body,html{
   .close-btn {
     position: absolute;
     top: 10px; right: 10px;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: bolder;
     cursor: pointer;
     color: blue;
   }
@@ -234,7 +228,6 @@ body,html{
 /* ************************************************************** */
 /* THE FOOTER BEGINS FROM HERE  */
 footer{
-  /* margin-top: 30px; */
   background-color: rgb(19,82,245);
   width: 100vw;
   color: white;
