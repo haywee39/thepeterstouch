@@ -52,7 +52,6 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  /* height: 135vh; */
   height: auto;
   /* background-color: orange; */
 }
@@ -65,8 +64,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 55%;
-  width: 90%;
+  height: auto;
+  width: 100%;
 }
 form input{
   padding: 0;

@@ -113,13 +113,11 @@
       .abt-texts1 .pic1, .abt-texts2 .picA{
         height: 130px;
         width: 130px;
-        /* border-radius: 30%; */
         /* object-fit: cover; */
       }
       .abt-texts1 .pic2, .abt-texts2 .picB{
         height: 210px;
         width: 210px;
-        /* border-radius: 30%; */
       }
      
 
@@ -150,7 +148,6 @@
         height: auto;
         text-align: center;
         justify-content: center;
-        /* padding-left: 0; */
       }
       .belief-each h1{
         font-size: 25px;

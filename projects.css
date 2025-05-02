@@ -27,13 +27,13 @@ body,html{
 
 /*navbar link hover effect */
 .nav-link {
-  color: #fff; /* Default link color */
+  color: #fff; 
   margin-left: 60px;
   font-size: 18px;
 }
 
 .nav-link:hover {
-  color: black; /* Hover color */
+  color: black; 
 }
 
 /* Change the toggler icon to white */
@@ -100,7 +100,7 @@ body,html{
   }
 
   .project-card:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
   }
 
   .project-card img {
@@ -170,7 +170,7 @@ body,html{
 
   .close-btn {
     position: absolute;
-    top: 10px; right: 10px;
+    top: 15px; right: 15px;
     font-size: 50px;
     font-weight: bolder;
     cursor: pointer;
@@ -180,6 +180,32 @@ body,html{
   .close-btn:hover {
     color: #000;
   }
+
+
+  /* PROJECTS VIDEO SECTION  */
+  .projects-vid{
+    gap: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:100vw;
+    height: auto;
+    align-items: center;
+    justify-content:center;
+    pointer-events: none;
+    /* background-color:rebeccapurple;   */
+}
+.vid-cover{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 50%;
+  /* gap: 20px; */
+  /* background-color: #f1c40f;    */
+}
 
  /* ********************************************************* */
  .client-logos {
@@ -295,6 +321,7 @@ footer{
 }
 /* ********************************************** */
 .address{
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   width: 45vw;
@@ -302,7 +329,6 @@ footer{
   justify-content: left;
   align-items:left;
   /* background-color: red; */
-  padding-top: 10px;
   
 }
 .address .fa-brands{

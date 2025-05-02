@@ -41,12 +41,7 @@ body{
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&& */
   
-  /* END: STYLING FOR THE NAVBAR ENDS HERE */
-  
-/* ********************************************************************* */
-
-
-  /* ********************************************************* */
+  /* END: STYLING FOR THE NAVBAR ENDS HERE */ /* ********************************************************* */
 
 #serv{
   display: flex;
@@ -84,7 +79,6 @@ body{
   font-size: 18px;
   color: black;
 }
-/* ************************************************************** */
 /* *************************************************************************8 */
 
 /* Section styling */
@@ -125,7 +119,6 @@ body{
     opacity: 1;
   }
 }
-/* ************************************************** */
 /* ********************************************************* */
 /* START ITEMS ON THE RIGHT */
 .right-container, .left-container {
@@ -169,7 +162,6 @@ body{
 }
 
 .right-serv h3, .left-serv h3 {
-  /* margin-top: 70px; */
   font-weight: 800;
   font-size: 25px;
   text-align: center;
@@ -177,7 +169,6 @@ body{
 }
 
 .right-serv p, .left-serv p {
-  /* margin-top: 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,14 +275,9 @@ body{
   }
 }
 
-
-/* ************************************************************** */
-
-
 /* &******************************************************************************** */
 /* THE FOOTER BEGINS FROM HERE  */
 footer{
-  /* margin-top: 30px; */
   background-color: rgb(19,82,245);
   width: 100vw;
   color: white;
@@ -330,8 +316,7 @@ footer{
   align-items: left;
   overflow: hidden;
   position: relative;
-  /* background-color: rgb(19,82,24); */
-  
+  /* background-color: rgb(19,82,24); */ 
 }
 .ban p{
   font-weight: bolder;
@@ -359,15 +344,14 @@ footer{
 }
 /* ********************************************** */
 .address{
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   width: 45vw;
   height: auto;
   justify-content: left;
   align-items:left;
-  /* background-color: red; */
-  padding-top: 10px;
-  
+  /* background-color: red; */ 
 }
 .address .fa-brands{
   text-decoration: none;
@@ -378,8 +362,7 @@ footer{
    text-decoration: none;
    color:white;
    font-size: normal;
-   padding-left: 15px;
-   
+   padding-left: 15px;   
  }
  
  .address a:hover{

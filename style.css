@@ -155,17 +155,16 @@ body, html{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    /* background-color: yellowgreen; */
     text-decoration: none;
     color: white;
-    
+    /* background-color: yellowgreen; */
   }
   .r-arrow:hover{
     background-color: black;
     color: white;
   }
   .r-arrow, .arrow{
-    background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
+    background: linear-gradient(132deg, #000000, #0000ff,#e60073,#ff0000, #00ff00,#ffffff);
     background-size: 400% 400%;
   }
   .circle{
@@ -254,12 +253,6 @@ body, html{
   height: 100%;
   /* background-color: #f1c40f;    */
 }
-
-.motion{
-  position: relative; 
-  width: 100%;
-  height: 100%; 
-}
 .arrow{
   position: absolute;
   display: flex;
@@ -268,13 +261,13 @@ body, html{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* background-color: yellowgreen; */
   text-decoration: none;
   top: -50;
   right: 50;
   color: white;
   cursor: pointer;
   pointer-events: visible;
+  /* background-color: yellowgreen; */
 }
 
 .arrow:hover{
@@ -435,7 +428,7 @@ body, html{
 
 .box.visible {
   opacity: 1;
-  transform: scale(1) rotate(360deg); /* Spin and scale in */
+  transform: scale(1) rotate(360deg); 
 }
 
 .box.invisible {
@@ -572,7 +565,6 @@ body, html{
 /* *************************************************************************8 */
 /* THE FOOTER BEGINS FROM HERE  */
 footer{
-  /* margin-top: 30px; */
   background-color: rgb(19,82,245);
   width: 100vw;
   color: white;
@@ -640,6 +632,7 @@ footer{
 }
 /* ********************************************** */
 .address{
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   width: 45vw;
@@ -647,7 +640,6 @@ footer{
   justify-content: left;
   align-items:left;
   /* background-color: red; */
-  padding-top: 10px;
   
 }
 .address .fa-brands{
