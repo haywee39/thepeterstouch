@@ -184,6 +184,7 @@ body,html{
 
   /* PROJECTS VIDEO SECTION  */
   .projects-vid{
+    margin-top: 30px;
     gap: 20px;
     position: relative;
     display: flex;
@@ -255,9 +256,11 @@ body,html{
 /* THE FOOTER BEGINS FROM HERE  */
 footer{
   background-color: rgb(19,82,245);
+  /* background-color: red; */
   width: 100vw;
   color: white;
   height: auto;
+  /* width: 100vw; */
   gap: 10px;
   display: flex;
   justify-content: center;

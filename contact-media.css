@@ -99,19 +99,19 @@ textarea{
  footer{
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: auto;
-  justify-content: center;
-  align-items: center;
+  /* width: 100vw; */
+  /* height: auto; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .one{
-  display: flex;
+  /* display: flex; */
   width: 100%;
   height: auto;
   /* background-color: #A04000; */
 }
 .two{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   width: 100%;
   padding: 10px;
