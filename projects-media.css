@@ -1,4 +1,12 @@
 @media screen and (max-width: 1023px) {
+    .projects-section{
+      display: block;
+    }
+    .project-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, .5fr));
+      width: 100%;
+    }
     .projects-texts{
       padding-top: 18vh;
       height: auto;
@@ -27,22 +35,12 @@
       }
       /* *********************************** */
       .projects-vid{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
+        /* margin: 20px; */
         width: 100%;
-        height: auto;
-        /* background-color: red; */
       }
       .vid-cover{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 85%;
         height: 25vh;
-        /* gap: 20px; */
-        /* background-color: #f1c40f;    */
       }
 
       .motion{
@@ -57,23 +55,15 @@
         /* **************************************8 */
      /* **************************************8 */
      footer{
-      display: flex;
       flex-direction: column;
       width: 100%;
-      /* height: auto; */
-      /* justify-content: center; */
-      /* align-items: center; */
-      /* background-color: red; */
     }
     .one{
       display: flex;
       width: 100%;
       height: auto;
-      /* background-color: #A04000; */
     }
     .two{
-      /* display: flex; */
-      /* flex-direction: column; */
       width: 100%;
       padding: 10px;
       /* background-color: lime; */
