@@ -80,7 +80,6 @@
     #play-vid{
         display: flex;
         flex-direction: column;
-        /* width: auto; */
         height: auto;
     }   
     .vid-cover{
@@ -111,12 +110,9 @@
         width:100%;
         height: 90%;
       }
-   /* .box-text{
-        padding-top: 0;
-    } */
+   
     .box-text p{
         width: 100%;
-        /* height: 80%; */
         font-size: 18px;
       } 
 

@@ -17,6 +17,7 @@ body,html{
 /* General navbar styles */
 .navbar{
   background-color: rgb(19,82,245) !important;
+
 }
    /*CSS for active link */
  .nav-link.active {
