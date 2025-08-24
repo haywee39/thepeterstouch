@@ -1,3 +1,29 @@
+// LOADER 
+    let percent = 0;
+    let percentageText = document.getElementById("percentage");
+    let progressBarFill = document.querySelector(".progress-bar-fill");
+    let loader = document.getElementById("loader");
+    let content = document.getElementById("content");
+
+    let interval = setInterval(() => {
+      percent++;
+      percentageText.textContent = percent + "%";
+      progressBarFill.style.width = percent + "%";
+
+      if (percent >= 100) {
+        clearInterval(interval);
+        loader.classList.add("fade-out");
+        setTimeout(() => {
+          loader.style.display = "none";
+          content.style.display = "block";
+        }, 800);
+      }
+    }, 30); // Adjust speed (30ms × 100 = 3 seconds total)
+  // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+
  // TYPEWRITER 
 const textToType = "Your trusted partner for state-of-the-art LED displays,cutting-edge audio-visual solutions, impactful publicity equipments. We passionately deliver solutions that are not only technologically advanced but also seamlessly integrated and user-friendly."
 

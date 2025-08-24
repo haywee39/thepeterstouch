@@ -1,3 +1,30 @@
+// LOADER 
+    let percent = 0;
+    let percentageText = document.getElementById("percentage");
+    let progressBarFill = document.querySelector(".progress-bar-fill");
+    let loader = document.getElementById("loader");
+    let content = document.getElementById("content");
+
+    let interval = setInterval(() => {
+      percent++;
+      percentageText.textContent = percent + "%";
+      progressBarFill.style.width = percent + "%";
+
+      if (percent >= 100) {
+        clearInterval(interval);
+        loader.classList.add("fade-out");
+        setTimeout(() => {
+          loader.style.display = "none";
+          content.style.display = "block";
+        }, 800);
+      }
+    }, 30); // Adjust speed (30ms × 100 = 3 seconds total)
+  // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+
+
 // TOP PIC- 1 FROM THE LEFT 
 document.addEventListener("DOMContentLoaded", function () {
     const profiles = document.querySelectorAll(".abt-texts1 .pic1");
