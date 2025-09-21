@@ -20,27 +20,39 @@
       }
     }, 30); // Adjust speed (30ms × 100 = 3 seconds total)
   // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+     const texts = [
+            "Your source for cutting-edge LED displays",
+            "Audio visuals & Publicity Equipments",
+            "Lecture and Auditorium Seats",
+            "Corporate Awareness Concept"
+        ];
 
+        let currentTextIndex = 0;
+        const typewriterElement = document.getElementById('typewriter');
 
+        function typeWriter(text, i = 0) {
+            if (i < text.length) {
+                typewriterElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(() => typeWriter(text, i), 100);
+            } else {
+                setTimeout(eraseText, 2000);
+            }
+        }
 
+        function eraseText() {
+            let currentText = typewriterElement.textContent;
+            if (currentText.length > 0) {
+                typewriterElement.textContent = currentText.slice(0, -1);
+                setTimeout(eraseText, 50);
+            } else {
+                currentTextIndex = (currentTextIndex + 1) % texts.length;
+                setTimeout(() => typeWriter(texts[currentTextIndex]), 500);
+            }
+        }
 
- // TYPEWRITER 
-const textToType = "Your trusted partner for state-of-the-art LED displays,cutting-edge audio-visual solutions, impactful publicity equipments. We passionately deliver solutions that are not only technologically advanced but also seamlessly integrated and user-friendly."
-
-const typingSpeed = 10; // Adjust this value (in milliseconds) to control the typing speed
-let textIndex = 0;
-const textElement = document.getElementById('typewriter-text');
-
-function typeWriter() {
-  if (textIndex < textToType.length) {
-    textElement.innerHTML += textToType.charAt(textIndex);
-    textIndex++;
-    setTimeout(typeWriter, typingSpeed);
-  }
-}
-
-// Call the typeWriter function when the page loads
-window.onload = typeWriter;
+        // Start the typewriter effect
+        typeWriter(texts[currentTextIndex]);
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 const homeSection = document.getElementById('home');
