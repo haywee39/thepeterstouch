@@ -120,7 +120,7 @@ body, html{
         }
 
 .content {
-  /* margin-top: 10vh; */
+  margin-top: 10vh;
   position: relative;
   max-width: 90%;
    padding: 0 20px;
@@ -168,7 +168,7 @@ body, html{
 
         @keyframes blink-caret {
             from, to { border-color: transparent }
-            50% { border-color: blue; }
+            50% { border-color:none; }
         }
 
           .cta-button {

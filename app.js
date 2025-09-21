@@ -57,8 +57,8 @@
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 const homeSection = document.getElementById('home');
 const images= [
-  'url("./backgrdimg/led.jpg")',
-  'url("./backgrdimg/backgrd.jpg")',
+  // 'url("./backgrdimg/led.jpg")',
+  // 'url("./backgrdimg/backgrd.jpg")',
   'url("./backgrdimg/conf-seat.jpg")',
   'url("./backgrdimg/led2.jpg")',
   'url("./backgrdimg/redmixr.jpg")',
