@@ -6,8 +6,11 @@
         align-items: center;
         overflow: hidden;
     }
+    .content{
+      /* width: 100%; */
+    }
     .typewriter{
-      font-size: 1rem;
+      /* font-size: 1rem; */
     }
                .cta-button {
             margin-top: 2rem;

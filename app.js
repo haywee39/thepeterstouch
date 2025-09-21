@@ -24,7 +24,7 @@
             "Your source for cutting-edge LED displays",
             "Audio visuals & Publicity Equipments",
             "Lecture and Auditorium Seats",
-            "Corporate Awareness Concept"
+            "Corporate Awareness Concepts"
         ];
 
         let currentTextIndex = 0;
