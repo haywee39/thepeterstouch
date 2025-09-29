@@ -86,11 +86,11 @@ body,html{
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 68vw;
+    width:65vw;
     align-items: center;
     justify-content: left;
     text-align: left;
-    /* background-color: grey; */  
+    background-color: grey;  
   }
   
    
@@ -101,10 +101,10 @@ body,html{
     color: black;
     text-align: center; 
     text-decoration: underline  rgb(19,82,245);
-    text-underline-offset: 10px; 
+    /* text-underline-offset: 10px;  */
     
   }
-  .abt-texts1, .abt-texts2{
+  .abt-texts1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,11 +116,11 @@ body,html{
   }
   .mid-pic{
     display: flex;
-    width: 68vw;
+    width: 100vw;
     height: 50vh;
     padding: 20px;
     justify-content: space-between;
-      /* background-color: orange; */
+      background-color: orange;
   }
   
   .mid-A img{
@@ -140,7 +140,7 @@ body,html{
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
   }
-  .abt-texts1 .pic2{
+  /* .abt-texts1 .pic2{
     float: right;
     margin: 15px;
     height: 300px;
@@ -148,10 +148,13 @@ body,html{
     shape-outside: circle(-30%);
     clip-path: circle();
     object-fit: cover;
-    transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(-100%); /* Start off-screen to the left 
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
-  }
+  } */
+    .abt-texts strong{
+      font-size: 1.5rem;
+    }
   .abt-texts p{
     text-align: center;
     padding-top: 10px;
@@ -159,7 +162,7 @@ body,html{
     font-weight: normal;
     color: black;
   }
-  .abt-texts2 .picA{
+  /* .abt-texts2 .picA{
     float: left;
     margin: 20px;
     height: 260px;
@@ -168,11 +171,11 @@ body,html{
     shape-outside: circle(-30%);
     clip-path: circle();
     object-fit: cover;
-    transform: translateX(100%); /* Start off-screen to the left */
+    transform: translateX(100%); /* Start off-screen to the left 
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
-  }
-  .abt-texts2 .picB{
+  } */
+  /* .abt-texts2 .picB{
     float: right;
     margin: 15px;
     height: 300px;
@@ -181,10 +184,10 @@ body,html{
     shape-outside: circle(-30%);
     clip-path: circle();
     object-fit: cover;
-    transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(-100%); /* Start off-screen to the left 
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
-  }
+  } */
 
   /* *********************** */
   /* PICS AT TOP LEFT TO SLIDE FROM LEFT  */
