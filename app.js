@@ -20,63 +20,67 @@
       }
     }, 30); // Adjust speed (30ms × 100 = 3 seconds total)
   // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-     const texts = [
-            "Your source for cutting-edge LED displays",
-            "Audio visuals & Publicity Equipments",
-            "Lecture and Auditorium Seats",
-            "Corporate Awareness Concepts"
-        ];
 
-        let currentTextIndex = 0;
-        const typewriterElement = document.getElementById('typewriter');
+        // Typewriter effect
+    const sentences = [
+      'Your source for cutting-edge LED displays',
+      'Audio visuals & Publicity Equipments',
+      'Lecture and Auditorium Seats',
+      'Corporate Awareness Concepts'
+    ];
 
-        function typeWriter(text, i = 0) {
-            if (i < text.length) {
-                typewriterElement.textContent += text.charAt(i);
-                i++;
-                setTimeout(() => typeWriter(text, i), 100);
-            } else {
-                setTimeout(eraseText, 2000);
-            }
+    const typedTextElement = document.getElementById('typed-text');
+    let sentenceIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentSentence = sentences[sentenceIndex];
+      if (!isDeleting) {
+        typedTextElement.textContent = currentSentence.substring(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === currentSentence.length) {
+          isDeleting = true;
+          setTimeout(type, 1000);
+          return;
         }
-
-        function eraseText() {
-            let currentText = typewriterElement.textContent;
-            if (currentText.length > 0) {
-                typewriterElement.textContent = currentText.slice(0, -1);
-                setTimeout(eraseText, 50);
-            } else {
-                currentTextIndex = (currentTextIndex + 1) % texts.length;
-                setTimeout(() => typeWriter(texts[currentTextIndex]), 500);
-            }
+      } else {
+        typedTextElement.textContent = currentSentence.substring(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          isDeleting = false;
+          sentenceIndex = (sentenceIndex + 1) % sentences.length;
         }
+      }
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
 
-        // Start the typewriter effect
-        typeWriter(texts[currentTextIndex]);
+    // Start the typewriter effect
+    type();
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    // Background slideshow
+    const backgrounds = [
+      './backgrdimg/conf-seat.jpg',
+      './backgrdimg/led2.jpg',
+      './backgrdimg/mic-conf.jpg'
+    ];
+
+    let currentIndex = 0;
+    const backgroundElement = document.querySelector('.background');
+
+    function changeBackground() {
+      currentIndex = (currentIndex + 1) % backgrounds.length;
+      backgroundElement.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
+    }
+
+    // Change background every 5 seconds
+    setInterval(changeBackground, 5000);
+    backgroundElement.style.backgroundImage = `url('${backgrounds[0]}')`;
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-const homeSection = document.getElementById('home');
-const images= [
-  // 'url("./backgrdimg/led.jpg")',
-  // 'url("./backgrdimg/backgrd.jpg")',
-  'url("./backgrdimg/conf-seat.jpg")',
-  'url("./backgrdimg/led2.jpg")',
-  'url("./backgrdimg/redmixr.jpg")',
-  'url("./backgrdimg/mic-conf.jpg")'
-  
-];
-let current = 0;
-
-function changeBackground() {
-  homeSection.style.backgroundImage = images[current];
-  current = (current + 1) % images.length;
-}
-
-
-changeBackground(); 
-setInterval(changeBackground, 3000);
-
-// ***************************************
+      //               './backgrdimg/conf-seat.jpg',
+      // './backgrdimg/led2.jpg',
+      // './backgrdimg/mic-conf.jpg'
 // ***************************************************************
 
 // COMPANY LOGO APPEARS ON Slide in TO THE POINT 

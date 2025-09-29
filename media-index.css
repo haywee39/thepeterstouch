@@ -1,33 +1,15 @@
-@media screen and (max-width: 767px) {
-
-    #home{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+  @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .typed-text {
+        font-size: 1.1rem;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
     }
-    .content{
-      /* width: 100%; */
-    }
-    .typewriter{
-      /* font-size: 1rem; */
-    }
-               .cta-button {
-            margin-top: 2rem;
-            padding: 12px 25px;
-            font-size: 1rem;
-            font-weight: 600;
-            background-color: red;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-    
-      
-}
-
 
 
 
