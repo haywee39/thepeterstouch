@@ -82,14 +82,12 @@
       }
       .mid-pic{
         display: flex;
-        /* flex-direction: column; */
         width: 100vw;
         height: auto;
         padding: 10px;
         align-items: center;
         justify-content: space-evenly;
-        gap: 5px;
-        
+        gap: 5px;       
         /* background-color: orange; */
       }
       
@@ -99,10 +97,10 @@
         font-weight: bolder;
         /* background-color: blue; */
       }
-      .abt-texts1, .abt-texts2{
+      .abt-texts1{
         padding: 10px;
       }
-      .abt-texts1 p, .abt-texts2 p{
+      .abt-texts1 p{
         padding: 0;
         width: 95%;
         text-align: justify;
@@ -110,12 +108,12 @@
         
       }
 
-      .abt-texts1 .pic1, .abt-texts2 .picA{
+      .abt-texts1 .pic1{
         height: 130px;
         width: 130px;
         /* object-fit: cover; */
       }
-      .abt-texts1 .pic2, .abt-texts2 .picB{
+      .abt-texts1 .pic2{
         height: 210px;
         width: 210px;
       }

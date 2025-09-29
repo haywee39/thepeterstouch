@@ -8,6 +8,7 @@ body, html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: montserrat;
+    /* background-color: rgb(212,220,231); */
     
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -159,15 +160,6 @@ body, html{
       background: red;
       box-shadow: 0 0 20px blue;
     }
-    /* .cursor {
-      display: inline-block;
-      width: 3px;
-      height: 1.3rem;
-      background-color: white;
-      animation: blink 1s infinite;
-      vertical-align: middle;
-      margin-left: 5px;
-    } */
     @keyframes blink {
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
@@ -182,7 +174,6 @@ body, html{
     height: auto;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(212,220,231); */
     background-color: black;
   }
 
@@ -194,11 +185,13 @@ body, html{
     width: 100%;
     align-items: center;
     justify-content: center;
-    /* background-image: url(./ubuilding/u3pexels-camcasey-1722183.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
+    background: linear-gradient(-45deg, rgb(19,82,245), white, rgb(19,82,245));
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    color: #000;
+    padding: 50px;
+    /* background-image: ; */
+}
   
   .abt-texts h1, h3{
     font-family: montserrat;
@@ -206,6 +199,10 @@ body, html{
     color: white;
     text-align: center; 
     font-weight: bold;
+    text-shadow: black 2px 2px 2px;
+  }
+  .abt-texts h3{
+    font-size: 1.6rem;
   }
   
   .abt-texts p{
@@ -323,28 +320,6 @@ body, html{
     text-align: right;
   }
   /* ******************* */
-  /* **************************************************** */
-  /* #play-vid{
-    margin-top: 20px;
-    position: relative;
-    display: flex;
-    width:100vw;
-    height: auto;
-    align-items: center;
-    justify-content:center;
-    pointer-events: none;
-    margin-bottom: 20px;
-    background-color:rebeccapurple;  
-}
-.vid-cover{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #f1c40f;   
-} */
 .arrow{
   position: absolute;
   display: flex;
@@ -378,14 +353,9 @@ body, html{
   100% {transform: scale(0.5)}
 }
 
-
-
-
-
 /* *************************************************************************************** */
 /* lets discuss project  */
 .discuss{
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 20px;
   width: 100vw;
@@ -587,8 +557,9 @@ body, html{
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: auto;
-  /* background-color: aqua; */
+  height: 60vh;
+  color: white;
+  background-color: rgb(19,82,245);
 }
 
 .why-container{
@@ -597,15 +568,16 @@ body, html{
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 80%;
+  width: 65%;
   height: auto;
+  padding:50px 20px;
   /* background-color: orange; */
 }
 .why-container h1{
   font-family: montserrat;
   font-size: 30px;
   font-weight: 800;
-  color: black;
+  /* color: black; */
 }
 
 .why-container p{
@@ -613,13 +585,154 @@ body, html{
   font-weight: normal;
   /* padding-top: 10px; */
 }
+/* *************************************************** */
+/* Testimonial Section */
+.testimonials {
+  width: 100vw;
+  padding: 70px 20px;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(-45deg, rgb(19,82,245), white, rgb(19,82,245));
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  color: #000;
+  padding: 50px;
+  /* background-image: ; */
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.testimonials .section-title {
+  font-family: montserrat;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.testimonial-carousel {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonial-card {
+  display: none;
+  padding: 35px 25px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.testimonial-card.active {
+  display: block;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: black;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  font-size: 1.3rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.testimonial-author img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.testimonial-author h4 {
+  font-family: montserrat;
+  margin: 0;
+  font-size: 1.3rem;
+  color: rgb(19,82,245);
+}
+
+.testimonial-author span {
+  font-size: 1.3rem;
+  color: rgb(19,82,245);
+}
+
+/* Navigation Arrows */
+.testimonial-carousel .prev,
+.testimonial-carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(19,82,245);
+  border: none;
+  font-size: 2rem;
+  padding: 8px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  background-color: transparent;
+}
+
+.testimonial-carousel .prev:hover,
+.testimonial-carousel .next:hover {
+  background: rgb(19,82,245);
+  color: white;
+}
+
+.testimonial-carousel .prev {
+  left: -60px;
+}
+
+.testimonial-carousel .next {
+  right: -10px;
+}
+
+/* Dots */
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dots span {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  background: rgb(19,82,245, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dots .active {
+  background: rgb(19,82,245);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+}
 /* ***************************************** */
 /* <!--START- CLIENTS LIST HERE --> */
 
 .client-logos {
-  margin-top: 20px;
-  padding: 10px;
-  height: 30vh;
+  padding: 15px;
+  height: 50vh;
   overflow: hidden;
   position: relative;
   background-color: rgb(19,82,245); 
@@ -658,115 +771,23 @@ body, html{
   }
 }
 
-/* *************************************************************************8 */
-/* THE FOOTER BEGINS FROM HERE  */
-footer{
-  background-color: rgb(19,82,245);
-  width: 100vw;
-  color: white;
-  height: auto;
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* ************************ */
-.one{
-  display: flex;
-  justify-content: space-evenly;
-  width: 15%;
-  height: 100%;
-  /* background-color: #A04000; */
-}
-.two{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  /* background-color: lime;  */
-}
-/* ******************************** */
 
-/* ************* */
-.ban{
-  display: flex;
-  flex-direction: column;
-  width: 20vw;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  overflow: hidden;
-  position: relative;
-  /* background-color: rgb(19,82,24); */
-  
-}
-.ban p{
-  font-weight: bolder;
-}
+/* ********************************************************************* */
+    /* <style> */
+  .map-container {
+    width: 100%;
+    height: 450px;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
-.socials{
-  display: flex;
-  width: 100%;
-  height: 40px;
-  gap: 30px;
-  justify-content: left;
-  align-items: left;
-  /* background-color: yellow; */
-  
-}
-
-.socials a{
-  text-decoration: none;
-  color: white;
-  
-}
-
-.socials a:hover{
-  color: black;
-}
-/* ********************************************** */
-.address{
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 45vw;
-  height: auto;
-  justify-content: left;
-  align-items:left;
-  /* background-color: red; */
-  
-}
-.address .fa-brands{
-  text-decoration: none;
-  color: white;
- }
- 
- .address a{
-   text-decoration: none;
-   color:white;
-   font-size: normal;
-   padding-left: 15px;
-   
- }
- 
- .address a:hover{
-   color: black;
- }
-/* ****************************************  */
-
-.tag{
- text-shadow:2px 2px 2px grey;
- animation:bayo 2s ease 1s infinite;
-}
-
-@keyframes bayo{
-
- 0%{
-    transform:rotateX(-45deg);
-}
- 50%{
-    transform:rotateY(45deg);
-}
-}
+  /* Responsive height for smaller screens */
+  @media (max-width: 768px) {
+    .map-container { height: 300px; }
+  }
+  @media (max-width: 480px) {
+    .map-container { height: 220px; }
+  }
