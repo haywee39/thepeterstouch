@@ -7,9 +7,7 @@
 body, html{
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-family: montserrat;
-    /* background-color: rgb(212,220,231); */
-    
+    font-family: montserrat;    
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
   /* Loader Container */
@@ -366,24 +364,22 @@ body, html{
   background-color: black;
   color: white;
 }
-.rhombus-video-wrapper {
+.vid-wrapper {
   width: 300px; 
   height: 300px; 
   position: relative; 
 }
-
-.rhombus-video {
+.r-video {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Creates the rhombus shape */
 }
 /* **************************** */
 /* Optional: Style for video controls to ensure they are visible */
-.rhombus-video::-webkit-media-controls {
-  overflow: visible !important;  /*For Chrome/Safari */
-}
+/* .r-video::-webkit-media-controls {
+  overflow: visible !important;  For Chrome/Safari
+} */
 
 .rhombus-video::-moz-media-controls {
   overflow: visible !important;  /*For Firefox*/ 
@@ -509,7 +505,7 @@ body, html{
 }
 /* ************************** */
 .box-text{
-  padding-top: 30px;
+  /* padding-top: 30px; */
   position: absolute;
   visibility: hidden;
   overflow: hidden;
@@ -529,23 +525,16 @@ body, html{
 }
 .box:hover .box-text{
   visibility: visible;
-  width:95%;
-  height:70%;
-  opacity: 0.8;
+  width: 90%;
+  height:90%;
+  padding: 30px;
+  gap: 20px;
+  opacity: 0.9;
   
 }
 
-.box-text h5{
+.box-text h3, p{
   color: white;
-}
-
-.box-text p{
-  width: 90%;
-  height: 65%;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
-  /* background-color: orange; */
 }
 
 /* ********************************************************************* */

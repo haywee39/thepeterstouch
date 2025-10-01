@@ -1,28 +1,4 @@
 @media screen and (max-width: 767px) {
-  #about{
-    margin-top: 20vh;
-    padding-top: 0vh;
-    display: flex;
-    width: 100vw;
-    height: auto !important;
-        /* background-color: blueviolet; */
-  }
-
-  .abt-texts{
-    height: auto !important;
-    width: 95vw;
-    /* background-color: yellow; */
-  }
-
-  .abt-texts h1{
-    font-size: 25px !important;
-  }
-
-  .abt-texts p{
-    font-size: 18px;
-  }
-  /* ******************************* */
-  
 /* *************************** */
   #believes{
     display: flex;
@@ -30,34 +6,36 @@
     height: auto !important;
     overflow-y: hidden;
     overflow-x: hidden;
+    /* padding: 30px; */
     /* background-color: orange; */
   }
 
   .belief-container{
-    height: auto !important;
+    height: 100% !important;
     width: 100vw;
+    padding: 10px 0;
     /* background-color: black; */
   }
   .belief-each {
     display: flex;
-    width: 98vw;
-    height: 48vh !important;
+    width: 95vw;
+    height: 35vh !important;
     justify-content: center;
     align-items: center;
     /* background-color: yellow; */
   }
 
-  .belief-each h1{
-    font-size: 19px;
+  /* .belief-each h1{ */
+    /* font-size: 19px; */
     /* font-weight: bold; */
-  }
+  /* } */
 
   
-
+/* 
   .belief-each p {
      width: 95vw;
     height: 33vh !important;
-  }
+  } */
 
     
 }
@@ -67,60 +45,7 @@
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 @media screen and (max-width: 1023px) {
-    #about{
-        display: flex;
-        width: 100vw;
-        height: auto;
-        /* background-color: red; */
-    }
-    .abt-texts{
-        display: flex;
-        padding-top: 4vh;
-        width: 100vw;
-        height: auto;
-        /* background-color: green; */
-      }
-      .mid-pic{
-        display: flex;
-        width: 100vw;
-        height: auto;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 5px;       
-        /* background-color: orange; */
-      }
-      
-      .abt-texts h1{
-        font-size:25px;
-        text-align: justify;
-        font-weight: bolder;
-        /* background-color: blue; */
-      }
-      .abt-texts1{
-        padding: 10px;
-      }
-      .abt-texts1 p{
-        padding: 0;
-        width: 95%;
-        text-align: justify;
-        /* background-color: red; */
-        
-      }
-
-      .abt-texts1 .pic1{
-        height: 130px;
-        width: 130px;
-        /* object-fit: cover; */
-      }
-      .abt-texts1 .pic2{
-        height: 210px;
-        width: 210px;
-      }
-     
-
-      /* ************************************** */
-      #believes {
+    #believes {
         display: flex;
         align-items: center;
         justify-content: center;

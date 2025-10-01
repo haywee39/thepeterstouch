@@ -65,9 +65,9 @@
 
 .footer-distributed .footer-company-name, .footer-distributed .footer-company-name a{
 	color:  blue;
-    text-shadow: 1px 1px 1px white;
+    /* text-shadow: 1px white; */
 	font-size: 15px;
-	font-weight: bold;
+	/* font-weight: bold; */
 	text-decoration: none;
 	margin: 0;
 }

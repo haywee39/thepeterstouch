@@ -6,165 +6,12 @@
 
 body,html{
     scroll-behavior: smooth;
-    background-color: rgb(212,220,231);
+    /* background-color: rgb(212,220,231); */
     font-family: montserrat;
     overflow-x: hidden;
 }
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
-/* ********************************************************************* */
-
-#about{
-    padding-top: 20vh;
-    width: 100vw;
-    height: auto;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: red; */
-   
-  }
-
-  
-  .abt-texts{
-    padding-top: 8vh;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width:65vw;
-    align-items: center;
-    justify-content: left;
-    text-align: left;
-    /* background-color: grey;   */
-  }
-  
-   
-  .abt-texts h3{
-    font-family: montserrat;
-    font-size: 30px;
-    font-weight: 800;
-    color: black;
-    text-align: center; 
-    /* text-decoration: underline  rgb(19,82,245); */
-    /* text-underline-offset: 10px;  */
-    
-  }
-  .abt-texts1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding: 25px;
-    width: 100%;
-    height: auto;  
-    /* background-color: yellowgreen; */
-  }
-  .mid-pic{
-    display: flex;
-    width: 100vw;
-    height: 50vh;
-    padding: 20px;
-    justify-content: space-between;
-      /* background-color: orange; */
-  }
-  
-  .mid-A img{
-    width: 100%;
-    height: 100%;
-  }
-  /* ****************** */
-  .abt-texts1 .pic1{
-    float: left;
-    margin: 15px;
-    height: 260px;
-    width: 260px;
-    shape-outside: circle(-30%);
-    clip-path: circle();
-    object-fit: cover;
-    transform: translateX(100%); /* Start off-screen to the left */
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
-  }
-  /* .abt-texts1 .pic2{
-    float: right;
-    margin: 15px;
-    height: 300px;
-    width: 300px;
-    shape-outside: circle(-30%);
-    clip-path: circle();
-    object-fit: cover;
-    transform: translateX(-100%); /* Start off-screen to the left 
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
-  } */
-    .abt-texts strong{
-      font-size: 1.5rem;
-    }
-  .abt-texts p{
-    text-align: center;
-    padding-top: 10px;
-    font-size: 18px;
-    font-weight: normal;
-    color: black;
-  }
-  /* .abt-texts2 .picA{
-    float: left;
-    margin: 20px;
-    height: 260px;
-    width: 260px;
-    border-radius: 50%;
-    shape-outside: circle(-30%);
-    clip-path: circle();
-    object-fit: cover;
-    transform: translateX(100%); /* Start off-screen to the left 
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
-  } */
-  /* .abt-texts2 .picB{
-    float: right;
-    margin: 15px;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    shape-outside: circle(-30%);
-    clip-path: circle();
-    object-fit: cover;
-    transform: translateX(-100%); /* Start off-screen to the left 
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
-  } */
-
-  /* *********************** */
-  /* PICS AT TOP LEFT TO SLIDE FROM LEFT  */
-  .abt-texts1 .pic1.visible, .abt-texts2 .picA.visible {
-    animation: slideInLeft 1s ease forwards;
-  }
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%); /* Move in from the right */
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0); /* End at the original position */
-      opacity: 1;
-    }
-  }
-  /* *********************************** */
-   /* PICS AT BOTTOM RYT TO SLIDE FROM RYT  */
-  .abt-texts2 .picB.visible, .abt-texts1 .pic2.visible {
-    animation: slideInRight 1s ease forwards;
-  }
-  
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%); /* Move in from the right */
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0); /* End at the original position */
-      opacity: 1;
-    }
-  }
 
   /* *********************************************************** */
  
@@ -186,7 +33,6 @@ body,html{
     height: 60vh;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: orange; */
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -196,8 +42,10 @@ body,html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 30vw;
     height: 55vh;
+    padding: 25px;
     background:rgb(200,210,221);
     box-shadow: 10px 10px rgb(19,82,245);
     transform: translateX(100%);
@@ -227,59 +75,6 @@ body,html{
     color: black !important;
   }
   
-  .belief-each p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: 35vh;
-    text-align: center;
-    font-size: 17px;
-    font-weight: normal;
-    color: black;
-    /* background-color: red; */
-  }
-  /* ********************************************************* */
-  .client-logos {
-    margin-top: 20px;
-    padding: 10px;
-    height: 30vh;
-    overflow: hidden;
-    position: relative;
-    background-color: rgb(19,82,245); 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .client-logos h1{
-    font-family: montserrat;
-    font-size: 30px;
-    font-weight: 800;
-    color: white;
-  }
   
-  .logo-track {
-    margin-top: 15px;
-    display: flex;
-    gap: 2.5rem;
-    width: max-content;
-    animation: scroll 10s linear infinite;
-  }
-  
-  .logo-track img {
-    height: 80%;
-    object-fit: contain;
-    max-height: 100px;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
 
 
