@@ -1,4 +1,21 @@
 @media screen and (max-width: 767px) {
+   #about{
+      margin-top: 0;
+      height: auto;
+      padding-bottom: 0;
+      /* background-color: red; */
+    }
+    .about-texts{
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+    .about-texts h3{
+        font-weight: bold;
+        /* padding: 0; */
+    }
+  /* ************************** */
+
 /* *************************** */
   #believes{
     display: flex;
