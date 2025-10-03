@@ -205,6 +205,7 @@ targets.forEach((target) => {
   stepsObserver.observe(target);
 });
 
+// SCRIPT FOR THE LED DISPLAY 
 
 
 

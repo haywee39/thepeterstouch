@@ -11,6 +11,43 @@ body,html{
     overflow-x: hidden;
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+    /* ********************************************************************* */
+#about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding:0 0 50px 0;
+  /* background-color: purple; */
+}
+.about-texts{
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 55vw;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  /* background-color: grey;   */
+}
+
+ 
+.about-texts h1{
+  font-size: 35px;
+  font-weight: 800;
+  color: black;
+  text-align: center;   
+}
+
+.about-texts p{
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  color: black;
+}
 
 
   /* *********************************************************** */

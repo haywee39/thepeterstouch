@@ -12,7 +12,7 @@
       }
 
       /* ************************************************************ */
-      .serv-texts{
+      /* .serv-texts{
         margin-top: 12vh;
         width: 95vw;
         height: 40vh;
@@ -21,30 +21,30 @@
           width: 100%;
           height: auto;
           gap: 20px;
-          padding: 10px; /* Add some padding for smaller devices */
+          padding: 10px; /* Add some padding for smaller devices 
         }
       
         .right-serv, .left-serv {
-          width: 100%; /* Full-width on smaller screens */
+          width: 100%; /* Full-width on smaller screens 
           height: auto;
-          /* gap: 200px; */
-          /* margin-bottom: 20px; Add spacing between items */
+          /* gap: 200px; 
+          /* margin-bottom: 20px; Add spacing between items 
         }
       
         .right-serv p, .left-serv p {
           width: 95%;
           height: 30vh;
-          /* font-size: 16px; Smaller text for mobile screens */
+          /* font-size: 16px; Smaller text for mobile screens 
         }
       
         .right-serv h3, .left-serv h3 {
-          font-size: 20px !important; /* Adjust heading size for mobile */
+          font-size: 20px !important; /* Adjust heading size for mobile 
         }
 
         .vertical-line{
           display: none;
         }
-      
+       */
       
   }
 
@@ -91,41 +91,41 @@
     }
     /* **************************************** */
    
-    #list-serve{
-      width: 100vw;
+    /* #list-serve{
+       width: 100vw;
       height: auto;
       flex-direction: column;
-      /* background-color: yellow; */
+      background-color: yellow;
     }
     .right-container, .left-container {
       width: 100%;
       height: auto;
       flex-direction: column;
-      /* background-color: aqua; */
+      background-color: aqua;
     }
   
     .right-serv, .left-serv {
       width: 95vw; 
       height: auto; 
-      /* background-color: orange; */
+      background-color: orange;
     }
 
     .right-serv h3, .left-serv h3{
       padding-top: 20px;
       font-weight: bold;
-    } 
+    }  
   
     .right-serv p, .left-serv p {
       display: flex;
       align-items: first baseline;
       width: 95%;
       height: 20vh;
-      /* background-color: red; */
+      background-color: red;
     }
   
     .vertical-line{
       display: none;
-    }
+    } */
   
   /* ********************************* */
 

@@ -375,6 +375,7 @@ body, html{
   height: 100%;
   object-fit: cover;
 }
+/* ********************* */
 /* **************************** */
 /* Optional: Style for video controls to ensure they are visible */
 /* .r-video::-webkit-media-controls {
