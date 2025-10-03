@@ -124,7 +124,6 @@ body, html{
           0 0 30px #ffff00,
           0 0 40px #8a2be2;
       animation: flicker 1s infinite alternate;
-      /* font-weight: bold; */
     }
     @keyframes flicker {
       0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -150,18 +149,21 @@ body, html{
       border-radius: 4px;
       font-size: 20px;
       cursor: pointer;
-      box-shadow: 0 0 15px red,0 0 20px blue, 0 0 25px yellow;
-      font-weight: lighter;      
+      font-weight: lighter;
+      box-shadow: 
+                  0 0 15px red,
+                  0 0 20px blue, 
+                  0 0 25px yellow;    
     }
 
     .button:hover {
       background: red;
       box-shadow: 0 0 20px blue;
     }
-    @keyframes blink {
+    /* @keyframes blink {
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
-    }
+    } */
 
 
 /* ********************************************************************************************* */
@@ -233,9 +235,8 @@ body, html{
   }
   .circle p{
     text-shadow: none;
-    font-size: 18px;
   }
-  .r-arrow{
+  /* .r-arrow{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,16 +245,15 @@ body, html{
     border-radius: 50%;
     text-decoration: none;
     color: white;
-    /* background-color: yellowgreen; */
-  }
-  .r-arrow:hover{
+  } */
+  /* .r-arrow:hover{
     background-color: black;
     color: white;
   }
   .r-arrow, .arrow{
     background: linear-gradient(132deg, #000000, #0000ff,#e60073,#ff0000, #00ff00,#ffffff);
     background-size: 400% 400%;
-  }
+  } */
   .circle{
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
@@ -332,14 +332,14 @@ body, html{
   color: white;
   cursor: pointer;
   pointer-events: visible;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 .arrow:hover{
   background-color: black;
   color: white;
 }
-.arrow, .r-arrow{
+/* .arrow, .r-arrow{
   animation-name: pulse;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -349,7 +349,7 @@ body, html{
   0% {transform: scale(0.5);}
   50%{transform: scale(1);}
   100% {transform: scale(0.5)}
-}
+} */
 
 /* *************************************************************************************** */
 /* lets discuss project  */
@@ -381,7 +381,7 @@ body, html{
   overflow: visible !important;  For Chrome/Safari
 } */
 
-.rhombus-video::-moz-media-controls {
+.r-video::-moz-media-controls {
   overflow: visible !important;  /*For Firefox*/ 
 }
 /* ********************************* */
@@ -418,6 +418,7 @@ body, html{
   /* background-color: orange; */
 }
 
+
 /* ******************* */
 /* button  */
 .contact-us {
@@ -452,6 +453,61 @@ body, html{
 .contact-us:hover::before{
   width: 100%;
 }
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* STYLE FOR THE 360 IMAGE SLIDER */
+
+.banner{
+  margin-bottom: 30px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+.banner .slider{
+  /* background-color: rgb(19,82,245); */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  top: 15%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 25s linear infinite;
+  z-index: 2;
+}
+@keyframes autoRun{
+  from{
+      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }to{
+      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item{
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: 
+      rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+      translateZ(500px);
+}
+.banner .slider .item img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  /* background-color: orange; */
+}
+
+/* ********************************************************* */
+
 
 
 /* **************************************** */
@@ -521,6 +577,7 @@ body, html{
   width: 0;
   height: 0;
   transition: width 0.4s ease, height 0.4s ease;
+  font-size: 20px;
   
 }
 .box:hover .box-text{
@@ -716,6 +773,195 @@ body, html{
   /* background-color: red; */
 }
 /* ***************************************** */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  color: white;
+  padding: 100px 0;
+  background: linear-gradient(-45deg, rgb(19,82,245), white, rgb(19,82,245));
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  padding: 50px 20px;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1000px;
+  color: rgb(19,82,245);
+ 
+}
+
+time{
+  color: red;
+}
+
+.detail p{
+  font-size: 20px;
+  color: rgb(19,82,245);
+}
+
+.timeline ol {
+  position: relative;
+  list-style: none;
+}
+
+.timeline ol::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background:  rgb(19,82,245);
+}
+
+.timeline ol li .item-inner {
+  padding: 20px 180px;
+  margin-bottom: 8vh;
+}
+
+.timeline ol li .time-wrapper {
+  position: relative;
+  font-size: 4.5rem; /* the numbers */
+  font-weight: bold;
+  line-height: 0.9;
+}
+
+.timeline ol li .time-wrapper::before,
+.timeline ol li .time-wrapper::after {
+  content: "";
+  position: absolute;
+  background:  rgb(19,82,245); /*the  vertical line*/
+}
+
+.timeline ol li .time-wrapper::before {
+  top: 50%;
+  left: -180px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 3px;
+  transition: width 0.8s linear;
+}
+
+.timeline ol li .time-wrapper::after {
+  top: calc(50% - 8px);
+  left: -60px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: scale(0);
+  transform-origin: left center;
+  transition: all 0.4s linear;
+}
+
+.timeline ol li time,
+.timeline ol li .detail > * {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.timeline ol li time {
+  display: inline-block;
+  transform: translateY(-30px);
+}
+
+.timeline ol li .detail > * {
+  transform: translateY(30px);
+}
+
+.timeline ol li .detail h3 {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 15px 0;
+  color: blue;
+  text-shadow: none;
+}
+
+/* ANIMATION STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ol li.in-view .time-wrapper::before {
+  width: 120px;
+}
+
+.timeline ol li.in-view .time-wrapper::after {
+  transition-delay: 0.8s;
+  transform: scale(1.5);
+}
+
+.timeline ol li.in-view time,
+.timeline ol li.in-view .detail > * {
+  opacity: 1;
+  transform: none;
+}
+
+.timeline ol li.in-view time {
+  transition-delay: 1.3s;
+}
+
+.timeline ol li.in-view .detail h3 {
+  transition-delay: 1.5s;
+}
+
+.timeline ol li.in-view .detail p {
+  transition-delay: 1.7s;
+}
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 700px) {
+  .timeline ol li .item-inner {
+    padding: 20px 40px;
+  }
+
+  .timeline ol li .time-wrapper::before {
+    display: none;
+  }
+
+  .timeline ol li .time-wrapper::after {
+    left: -45px;
+    transform-origin: center;
+  }
+
+  .timeline ol li.in-view .time-wrapper::after {
+    transition-delay: 0s;
+  }
+
+  .timeline ol li.in-view time {
+    transition-delay: 0.5s;
+  }
+
+  .timeline ol li.in-view .detail h3 {
+    transition-delay: 0.7s;
+  }
+
+  .timeline ol li.in-view .detail p {
+    transition-delay: 0.9s;
+  }
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* <!--START- CLIENTS LIST HERE --> */
 
 .client-logos {

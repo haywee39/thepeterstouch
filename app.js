@@ -181,5 +181,31 @@ setInterval(() => {
 
 
 
+// SCRIPT FOR THE STEPS TO WORK WITH US
+const targets = document.querySelectorAll(".timeline ol li");
+const threshold = 0.5;
+const ANIMATED_CLASS = "in-view";
+
+function callback(entries) {
+  entries.forEach((entry) => {
+    const elem = entry.target;
+    if (entry.intersectionRatio >= threshold) {
+      elem.classList.add(ANIMATED_CLASS);
+      stepsObserver.unobserve(elem);
+    } else {
+      elem.classList.remove(ANIMATED_CLASS);
+    }
+  });
+}
+
+// Use a unique name for the observer to avoid conflicts
+const stepsObserver = new IntersectionObserver(callback, { threshold });
+
+targets.forEach((target) => {
+  stepsObserver.observe(target);
+});
+
+
+
 
 
