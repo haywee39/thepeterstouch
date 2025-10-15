@@ -6,7 +6,6 @@
 
 body,html{
     scroll-behavior: smooth;
-    /* background-color: rgb(212,220,231); */
     font-family: montserrat;
     overflow-x: hidden;
 }
@@ -70,10 +69,6 @@ body,html{
 }
 
   .project-grid {
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-    /* gap: 20px; */
-    /* margin-bottom: 20px; */
     padding: 20px;
     display: flex;
     align-items: center;
@@ -112,11 +107,6 @@ body,html{
     font-weight: bold;
     margin-bottom: 5px;
   }
-
-  /* .project-description {
-    font-size: 14px;
-    margin: 10px 0;
-  } */
 
   .project-link {
     color: #007bff;
@@ -245,116 +235,3 @@ body,html{
     }
   }
 
-
-/* ************************************************************** */
-/* THE FOOTER BEGINS FROM HERE  */
-footer{
-  background-color: rgb(19,82,245);
-  width: 100vw;
-  color: white;
-  height: auto;
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* ************************ */
-.one{
-  display: flex;
-  justify-content: space-evenly;
-  width: 15%;
-  height: 100%;
-  /* background-color: #A04000; */
-}
-.two{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  /* background-color: lime;  */
-}
-/* ******************************** */
-
-/* ************* */
-.ban{
-  display: flex;
-  flex-direction: column;
-  width: 20vw;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  overflow: hidden;
-  position: relative;
-  /* background-color: rgb(19,82,24); */
-  
-}
-.ban p{
-  font-weight: bolder;
-}
-
-.socials{
-  display: flex;
-  width: 100%;
-  height: 40px;
-  gap: 30px;
-  justify-content: left;
-  align-items: left;
-  /* background-color: yellow; */
-  
-}
-
-.socials a{
-  text-decoration: none;
-  color: white;
-  
-}
-
-.socials a:hover{
-  color: black;
-}
-/* ********************************************** */
-.address{
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 45vw;
-  height: auto;
-  justify-content: left;
-  align-items:left;
-  /* background-color: red; */
-  
-}
-.address .fa-brands{
-  text-decoration: none;
-  color: white;
- }
- 
- .address a{
-   text-decoration: none;
-   color:white;
-   font-size: normal;
-   padding-left: 15px;
-   
- }
- 
- .address a:hover{
-   color: black;
- }
-/* ****************************************  */
-
-.tag{
- text-shadow:2px 2px 2px grey;
- animation:bayo 2s ease 1s infinite;
-}
-
-@keyframes bayo{
-
- 0%{
-    transform:rotateX(-45deg);
-}
- 50%{
-    transform:rotateY(45deg);
-}
-}
