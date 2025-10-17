@@ -12,9 +12,54 @@
     }
     .about-texts h3{
         font-weight: bold;
-        /* padding: 0; */
     }
   /* ************************** */
+    .student-pro {
+    padding: 2rem 0;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    }
+    .student-item{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    /* background-color: red; */
+    }
+    .value{ 
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding: 0;
+
+}
+/* ********************* */
+  .stack {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: grid;
+    /* border-radius: 20%; */
+    /* place-items: center; */
+    /* background-color: rgb(85, 4, 4); */
+
+  }
+
+
+    /* Square image on top */
+  .photo {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20%;
+    z-index: 1;
+  }
+  .slogan{
+  font-size: 1.9rem; 
+  text-align: center; 
+  text-align: left;
+  letter-spacing: 1px;
+}
 
 /* *************************** */
   #believes{
@@ -23,7 +68,6 @@
     height: auto !important;
     overflow-y: hidden;
     overflow-x: hidden;
-    /* padding: 30px; */
     /* background-color: orange; */
   }
 
