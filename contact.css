@@ -6,7 +6,6 @@
 
 body{
     scroll-behavior: smooth;
-    /* background-color: rgb(212,220,231); */
     font-family: montserrat;
     overflow-x: hidden;
 }
@@ -20,7 +19,6 @@ body{
   align-items: center;
   width: 100vw;
   height: auto;
-  /* margin-top: 20px; */
   padding:0 0 50px 0;
   /* background-color: purple; */
 }
@@ -115,8 +113,16 @@ body{
   width: 55%;
   height: 85%;
   border-radius: 10px;
-  background-color: rgb(229,229,229);
+  /* background-color: rgb(229,229,229); */
   color: white;
+  background: linear-gradient(-30deg, rgb(245, 19, 19), white, rgb(245, 19, 19));
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+ @keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 form h3{
