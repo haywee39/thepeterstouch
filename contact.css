@@ -8,11 +8,15 @@ body{
     scroll-behavior: smooth;
     font-family: montserrat;
     overflow-x: hidden;
+        background: linear-gradient(-45deg, rgb(19,82,245), white, rgb(19,82,245));
+    background-size: 400% 400%;
+    animation: gradientShift 3s ease infinite;
 }
 
 
-/* *******************************************************8 */ 
-#cont{
+/* ******************************************************* */ 
+
+ #cont{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,14 +24,14 @@ body{
   width: 100vw;
   height: auto;
   padding:0 0 50px 0;
-  /* background-color: purple; */
 }
+/* ******************************************** */
 .cont-texts{
   margin-top: 25vh;
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 60vw;
+  width: 55vw;
   align-items: center;
   justify-content: center;
   padding: 30px;
@@ -48,8 +52,19 @@ body{
   font-size: 18px;
   color: rgb(19,82,245);
 }
+/* *************************************************************************8 */
+
+
+
+
+
+
+
+
+
   /* ************************************************************** */
   .others{
+    padding: 1rem;
     width: 100vw;
     height: auto;
     align-items: center;
@@ -57,12 +72,11 @@ body{
     /* background-color: yellow; */
   }
   .talk{
-    padding: 3rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: auto;
     /* background-color: purple; */
   }
   .talk-A{
@@ -71,35 +85,41 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 25vw;
+    width: 20vw;
     height:100%;
     color: rgb(19,82,245);
-    gap: 20px;
-    /* background-color: orange; */
+    gap: 6px;
+    /* background-color: red; */
   }
   .talk-A i{
-    /* background-color: red; */
     background-color: rgb(19,82,245);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
   }
   .talk-A h3{
     font-weight: bold;
   }
   .talk-A p{
-    font-size: 20px;
+    font-size: 18px;
   }
   /* ****************************************** */
-.contact-form{
+  .cover-form{
   display: flex;
   align-items: center;
   width: 100vw;
   height: 100vh;
+  /* background-color: orange; */
+}
+.contact-form{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   /* background-color: orange; */
 }
 
@@ -113,7 +133,6 @@ body{
   width: 55%;
   height: 85%;
   border-radius: 10px;
-  /* background-color: rgb(229,229,229); */
   color: white;
   background: linear-gradient(-30deg, rgb(245, 19, 19), white, rgb(245, 19, 19));
   background-size: 400% 400%;
@@ -173,22 +192,25 @@ textarea{
 .submit:hover{
   background-color: red;
 }
-#maps{
-  position: absolute;
-  display: flex;
-  width: 45%;
-  height: 55vh;
-  border-radius: 10px;
-  background-color: rgb(19,82,245);
-  margin-left: 50vw;
-}
 
-#maps iframe{
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  /* background-color: black; */
-}
+/* **************************** */
+ #maps {
+    width: 40vw;
+    height: 450px;
+  }
+  #maps iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Responsive height for smaller screens */
+  @media (max-width: 768px) {
+    #maps { height: 300px; }
+  }
+  @media (max-width: 480px) {
+    #maps { height: 220px; }
+  }
 /* ********************************************************* */
 .client-logos {
   margin-top: 20px;
