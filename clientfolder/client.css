@@ -48,3 +48,13 @@
     transform: translateX(-50%);
   }
 }
+
+
+
+ @media screen and (max-width: 767px) {
+  .client-logos p{
+  width: 100%;
+}
+
+
+ }

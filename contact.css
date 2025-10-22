@@ -212,7 +212,7 @@ textarea{
     #maps { height: 220px; }
   }
 /* ********************************************************* */
-.client-logos {
+/* .client-logos {
   margin-top: 20px;
   padding: 10px;
   height: 30vh;
@@ -252,6 +252,6 @@ textarea{
   100% {
     transform: translateX(-50%);
   }
-}
+} */
 
 /* ************************************************************** */
