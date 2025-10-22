@@ -24,9 +24,9 @@
         // Typewriter effect
     const sentences = [
       'Your source for cutting-edge LED displays',
-      'Audio visuals & Publicity Equipments',
-      'Lecture and Auditorium Seats',
-      'Corporate Awareness Concepts'
+      'Audio visuals & Publicity Equipments'
+      // 'Lecture and Auditorium Seats',
+      // 'Corporate Awareness Concepts'
     ];
 
     const typedTextElement = document.getElementById('typed-text');

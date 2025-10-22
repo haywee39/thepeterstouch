@@ -221,6 +221,7 @@ time{
 
 .details p{
   font-size: 20px;
+  text-align: left;
 }
 
 .timeline ol {
@@ -297,6 +298,7 @@ time{
   line-height: 1;
   margin: 15px 0;
   color: blue;
+  text-align: center;
 }
 
 /* ANIMATION STYLES
