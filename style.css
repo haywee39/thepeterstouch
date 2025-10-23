@@ -236,24 +236,7 @@ body, html{
   .circle p{
     text-shadow: none;
   }
-  /* .r-arrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-decoration: none;
-    color: white;
-  } */
-  /* .r-arrow:hover{
-    background-color: black;
-    color: white;
-  }
-  .r-arrow, .arrow{
-    background: linear-gradient(132deg, #000000, #0000ff,#e60073,#ff0000, #00ff00,#ffffff);
-    background-size: 400% 400%;
-  } */
+
   .circle{
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
@@ -898,7 +881,23 @@ time{
   color: blue;
   text-shadow: none;
 }
+    .btn {
+      margin-top: 30px;
+      padding: 15px 24px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 20px;
+      cursor: pointer;
+      font-weight: lighter;  
+      align-items: center;  
+    }
 
+    .btn:hover {
+      background: red;
+      box-shadow: 0 0 20px blue;
+    }
 /* ANIMATION STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
