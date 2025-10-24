@@ -6,13 +6,11 @@
 
 body{
     scroll-behavior: smooth;
-    /* background-color: rgb(212,220,231); */
     font-family: montserrat;
     overflow-x: hidden;
-    /* color: rgb(19,82,245) !important; */
 }
 
-  /* END: STYLING FOR THE NAVBAR ENDS HERE */ /* ********************************************************* */
+  /* END: STYLING FOR THE NAVBAR ENDS HERE */
 
 #serv{
   display: flex;
@@ -21,7 +19,6 @@ body{
   align-items: center;
   width: 100vw;
   height: auto;
-  /* margin-top: 20px; */
   padding:0 0 50px 0;
   /* background-color: purple; */
 }
@@ -53,15 +50,7 @@ body{
   color: rgb(19,82,245);
 }
 /* *************************************************************************8 */
-:root {
-    /* --primary-color: #2c3e50; */
-    /* --secondary-color: #3498db; */
-    /* --accent-color: #e74c3c; */
-    /* --light-color: #ecf0f1; */
-    /* --dark-color: #2c3e50; */
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-}
+
 
 /* Services Container */
 .services-container {

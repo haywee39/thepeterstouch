@@ -1,5 +1,4 @@
    
-// {/* <script> */}
     document.addEventListener("DOMContentLoaded", function() {
         const studentItems = document.querySelectorAll('.student-pro .student-item');
 
@@ -38,7 +37,6 @@
             observer.observe(item);
         });
     });
-// {/* </script> */}
      
 // ***********************************************************************
 

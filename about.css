@@ -6,7 +6,6 @@
 
 body,html{
     scroll-behavior: smooth;
-    /* background-color: rgb(212,220,231); */
     font-family: montserrat;
     overflow-x: hidden;
 }
@@ -74,9 +73,6 @@ body,html{
     gap: 50px;
     justify-content: space-evenly;
     align-items: center;  
-    /* background: linear-gradient(-45deg, rgb(19,82,245), white, rgb(19,82,245));
-    background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;  */
     background: linear-gradient(-5deg, rgb(245, 19, 19), white, rgb(245, 19, 19));
     background-size: 400% 400%;
     animation: gradientShift 8s ease infinite;
@@ -127,18 +123,6 @@ body,html{
     object-position: top;
     display: block;
   }
-
-  /* Bounce animation */
-  /* @keyframes bob {
-    0%, 100% { transform: rotate(45deg) translateY(0); }
-    50%      { transform: rotate(45deg) translateY(-10px); }
-  } */
-
-  /* Reduced motion users */
-  /* @media (prefers-reduced-motion: reduce) {
-    .diamond { animation: none; }
-  } */
-/* ****************************************************************** */
 /* * &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */ 
 /* slide animation style  */
 /* Sliding animations */
@@ -169,13 +153,8 @@ body,html{
     opacity: 1;
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-
-
-
-  /* *********************************************************** */
  
   #believes{
-    /* margin-top:3vh; */
     display: flex;
     flex-direction:column;
     width:100vw;

@@ -2,7 +2,6 @@
     .content{
       margin-top: 4rem;
       width: 100%;
-      /* background-color: red; */
     }
       h1 {
         font-size: 2rem;
@@ -82,7 +81,6 @@
       }
     /* ********************** */
     .spinning-section{
-        /* margin-top: 3vh; */
         height: auto;
     }
     .box-container {     

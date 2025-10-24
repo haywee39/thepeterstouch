@@ -25,8 +25,6 @@
     const sentences = [
       'Your source for cutting-edge LED displays',
       'Audio visuals & Publicity Equipments'
-      // 'Lecture and Auditorium Seats',
-      // 'Corporate Awareness Concepts'
     ];
 
     const typedTextElement = document.getElementById('typed-text');
@@ -60,9 +58,10 @@
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     // Background slideshow
     const backgrounds = [
-      './backgrdimg/conf-seat.jpg',
-      './backgrdimg/led2.jpg',
-      './backgrdimg/mic-conf.jpg'
+      './backgrdimg/scrn.jpeg',
+      './backgrdimg/pplewatchled.jpeg',
+      './backgrdimg/redmixr.jpg',
+      './backgrdimg/led.jpg'
     ];
 
     let currentIndex = 0;
@@ -76,34 +75,6 @@
     // Change background every 5 seconds
     setInterval(changeBackground, 5000);
     backgroundElement.style.backgroundImage = `url('${backgrounds[0]}')`;
-
-// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-      //               './backgrdimg/conf-seat.jpg',
-      // './backgrdimg/led2.jpg',
-      // './backgrdimg/mic-conf.jpg'
-// ***************************************************************
-
-// COMPANY LOGO APPEARS ON Slide in TO THE POINT 
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const image = document.querySelector(".slide-in-image");
-
-//   function handleScroll() {
-//       const imageRect = image.getBoundingClientRect();
-//       const windowHeight = window.innerHeight;
-
-//       // Check if the image is in the viewport
-//       if (imageRect.top < windowHeight && imageRect.bottom > 0) {
-//           image.classList.add("visible");
-//       } 
-//       // Remove 'visible' class only when the image is completely out of view
-//       else if (imageRect.bottom <= 0 || imageRect.top >= windowHeight) {
-//           image.classList.remove("visible");
-//       }
-//   }
-
-//   window.addEventListener("scroll", handleScroll);
-// });
 
 // *********************************************************************************
 // Select all boxes

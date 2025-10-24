@@ -63,11 +63,10 @@
 	color:  inherit;
 }
 
-.footer-distributed .footer-company-name, .footer-distributed .footer-company-name a{
+.footer-distributed .footer-company-name, 
+.footer-distributed .footer-company-name a{
 	color:  blue;
-    /* text-shadow: 1px white; */
 	font-size: 15px;
-	/* font-weight: bold; */
 	text-decoration: none;
 	margin: 0;
 }
@@ -102,7 +101,6 @@
 	display: inline-block;
 	color: #ffffff;
 	font-size: 18px;
-    /* font-weight:400; */
 	vertical-align: middle;
 	margin:0;
 }
@@ -178,7 +176,6 @@
 }
 
 .footer-right .developer{
-	/* line-height: 20px; */
 	color:  white;
 	font-size: 25px;
 	font-weight: normal;
