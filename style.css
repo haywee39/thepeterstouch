@@ -343,11 +343,6 @@ body, html{
   object-fit: cover;
 }
 /* ********************* */
-/* **************************** */
-/* Optional: Style for video controls to ensure they are visible */
-/* .r-video::-webkit-media-controls {
-  overflow: visible !important;  For Chrome/Safari
-} */
 
 .r-video::-moz-media-controls {
   overflow: visible !important;  /*For Firefox*/ 
