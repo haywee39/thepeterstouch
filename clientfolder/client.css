@@ -1,7 +1,7 @@
 /* <!--START- CLIENTS LIST HERE --> */
 
 .client-logos {
-  padding: 15px;
+  /* padding: 15px; */
   height: auto;
   padding: 3rem;
   overflow: hidden;
@@ -52,6 +52,11 @@
 
 
  @media screen and (max-width: 767px) {
+  .client-logos{
+    text-align: center;
+    width: 100vw;
+    padding: 1rem;
+  }
   .client-logos p{
   width: 100%;
 }

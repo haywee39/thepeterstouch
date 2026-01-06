@@ -26,32 +26,31 @@
     /* background-color: red; */
     }
     .value{ 
-    width: 100%;
+    width: 100vw;
     height: auto;
+    padding: 1rem;
     gap: 10px;
-    padding: 0;
+    /* padding: 0; */
 
 }
 /* ********************* */
   .stack {
     position: relative;
-    width: 100%;
-    height: 80%;
+    width: 90vw;
+    height: 70%;
     display: grid;
-    /* border-radius: 20%; */
-    /* place-items: center; */
-    /* background-color: rgb(85, 4, 4); */
-
+    padding: 1rem;
+    margin: 1rem;
   }
 
 
     /* Square image on top */
   .photo {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
-    border-radius: 20%;
+    border-radius: 10%;
     z-index: 1;
   }
   .slogan{
