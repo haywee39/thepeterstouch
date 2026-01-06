@@ -306,6 +306,10 @@ time{
       background: red;
       box-shadow: 0 0 20px blue;
     }
+      .btn a{
+      text-decoration: none;
+      color: white;
+    }
 
 /* ANIMATION STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

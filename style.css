@@ -160,6 +160,10 @@ body, html{
       background: red;
       box-shadow: 0 0 20px blue;
     }
+    .button a{
+      text-decoration: none;
+      color: white;
+    }
 
 /* ********************************************************************************************* */
   /* WE PROFER SOLUTIONS TO PROBLEMS */
@@ -872,6 +876,10 @@ time{
     .btn:hover {
       background: red;
       box-shadow: 0 0 20px blue;
+    }
+     .btn a{
+      text-decoration: none;
+      color: white;
     }
 /* ANIMATION STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
